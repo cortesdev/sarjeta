@@ -25,13 +25,7 @@ const FooterLinks = () => {
                                 <Typography size="body">home</Typography>
                             </Link>
                         </StyledListItem>
-                        <StyledListItem
-                        //  sx={{ transform: 'rotate(2deg)' }}
-                        >
-                            <Link to="#discografia" smooth>
-                                <Typography size="body">discografia</Typography>
-                            </Link>
-                        </StyledListItem>
+                       
                         <StyledListItem
                         // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
                         >

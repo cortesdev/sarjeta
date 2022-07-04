@@ -29,14 +29,6 @@ const Navbar = () => {
                     </StyledLink>
                 </StyledListItem>
 
-                <StyledListItem
-                //  sx={{ transform: 'rotate(2deg)' }}
-                >
-                    <StyledLink to="#discografia" smooth>
-                        <Typography size="h3" weight='old'>discografia</Typography>
-                    </StyledLink>
-                </StyledListItem>
-
 
                 <StyledListItem
                 // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
@@ -61,13 +53,7 @@ const Navbar = () => {
                         <Typography size="h3" weight='old'>contato</Typography>
                     </StyledLink>
                 </StyledListItem>
-                <StyledListItem
-                // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
-                >
-                    <a rel="noreferrer" target="_blank" href="https://produto.mercadolivre.com.br/MLB-2674669920-camisa-doidon-pixote-xg-_JM?searchVariation=174626582834#searchVariation=174626582834&position=3&search_layout=stack&type=item&tracking_id=418c8d12-6aa7-4345-8485-6fb2ee49bd20">
-                        <Typography size="h3" weight='old'>loja</Typography>
-                    </a>
-                </StyledListItem>
+               
             </Stack>
         </List>
 

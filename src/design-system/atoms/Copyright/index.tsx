@@ -15,7 +15,7 @@ export const Copyright = ({ ...props }) => {
       <Typography size="small" mr="0" >
         Copyright {'© '}
         {`${new Date().getFullYear()} `}
-        Doidon Pixote{isMobile ? '' : '-'}  <br />  todos os direitos reservados
+        Coletivo Sarjeta{isMobile ? '' : '-'}  <br />  todos os direitos reservados
       </Typography>
     </Box>
   )

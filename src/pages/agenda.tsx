@@ -14,9 +14,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
 
 
   const StyledList = styled(List)`
-  background: black;
   border-radius: 20px;
-  box-shadow: 2px 2px 12px 10px #000;
 }
   `
   const Container = styled.div`
@@ -28,23 +26,22 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
   return (
     <Container id="agenda">
       <Typography size='h2' weight='old'>
-        Tour
+        Agenda
       </Typography>
       <FlexSpacer minHeight={3} />
 
       <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
         {!isMobile &&
-          <img src="/images/foto_vert.jpg" alt="logo" width="50%" />
+          <img src="/images/foto.jpg" alt="logo" width="50%" />
         }
 
         <Divider orientation="vertical"  style={{borderColor: "rgba(255, 255, 255, .2)"}} flexItem />
  
-        <Stack direction="column" width={{ xs: '100%', md: '41%' }}>
-          <iframe title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/artist/1H3kmZKczSXJ2jum4zrqR3?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
+        <Stack direction="column" width={{ xs: '100%', md: '41%'}}>
+          <iframe title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/37i9dQZF1EQrjpWhpIezMF?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           <StyledList>
 
-            <Typography size="h3" weight='old' mb={3}>
+            <Typography size="h3" weight='old' mb={3}  mt={3}>
               Proximos eventos
             </Typography>
 

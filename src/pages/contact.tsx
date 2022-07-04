@@ -16,7 +16,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
   const Container = styled(Box)`
       width: ${pageWidth};
       padding: 0 3rem;
-      background: #161616;
+      background: #e9004c;
 
       @media (max-width: 600px) {
         padding: 0 1.5rem;
@@ -97,10 +97,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Typography size='h3' weight='old'>
-            Loja
-          </Typography>
-
+          
           <Typography size='h4' weight='old'>
             Mercado livre
           </Typography>
@@ -111,7 +108,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
               display="flex"
               target="_blank" href="https://produto.mercadolivre.com.br/MLB-2674669920-camisa-doidon-pixote-xg-_JM?searchVariation=174626582834#searchVariation=174626582834&position=3&search_layout=stack&type=item&tracking_id=418c8d12-6aa7-4345-8485-6fb2ee49bd20">
               <img src="/images/SVG/External.svg" color="white" alt="share" style={{ marginRight: '10px', width: 18 }} />
-             Camisa doidon Pixote
+             Camisa samba de sarjeta
             </Link>
           </Typography>
           <FlexSpacer minHeight={6} />

@@ -38,17 +38,17 @@ const StyledControls = styled(Stack)`
 const modalData = [
     {
         id: 1,
-        text: "doidon 1",
+        text: "sarjeta 1",
         url: "/images/capa1.jpg"
     },
     {
         id: 2,
-        text: "doidon 2",
+        text: "sarjeta 2",
         url: "/images/capa2.jpg"
     },
     {
         id: 3,
-        text: "doidon 3",
+        text: "sarjeta 3",
         url: "/images/capa3.jpg"
     },
 ]

@@ -13,7 +13,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <Box bgcolor="#161616">
+        <Box bgcolor="#e9004c">
 
             <Grid container
                 className="footer"

@@ -85,8 +85,8 @@ const MobileNav: FC<MobileNavProps> = () => {
         <Box onClick={() => navigate('/')} sx={{ cursor: 'pointer' }}>
           <img
             style={{ margin: 'auto 0' }}
-            src="/images/SVG/logo-doidon-white.svg"
-            alt="doidon logo"
+            src="/images/SVG/logo-horiz.svg"
+            alt="sarjeta logo"
             width={100}
           />
         </Box>

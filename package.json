@@ -1,5 +1,5 @@
 {
-  "name": "doidon-pixote",
+  "name": "sarjeta",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +33,7 @@
     "react-delay-input": "^4.1.0",
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.31.1",
+    "react-ig-feed": "^1.7.0",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",

@@ -150,9 +150,9 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#000",
-      dark: "#0017E5",
-      light: "#1A30FF",
+      main: "#FF0053",
+      dark: "#F8407C",
+      light: "#F8407C",
     },
     neutral: {
       main: "#64748B",
@@ -167,8 +167,8 @@ export const theme = createTheme({
     secondary: "#fff",
     tertiary: "#1AD24E",
     text: "#fff",
-    background: "#000000",
-    primary: "#black",
+    background: "#FF0053",
+    primary: "#FF0053",
     light: "#edeff1",
     lighter: "#F2F4FF",
     // Neutral
@@ -186,12 +186,12 @@ export const theme = createTheme({
   },
   fonts: {
     body: {
-      fontFamily: "doidon body",
+      fontFamily: "sarjeta body",
       fontSize: "1.8rem",
       lineHeight: "1.125rem",
     },
     bodyBold: {
-      fontFamily: "doidon bold",
+      fontFamily: "sarjeta bold",
       fontSize: "2.2rem",
       lineHeight: "1.125.rem",
     },
@@ -206,12 +206,12 @@ export const theme = createTheme({
       textTransform: "inherit",
     },  
     h1: {
-      fontFamily: "doidon old",
+      fontFamily: "sarjeta old",
       fontSize: "8rem",
       lineHeight: "1em",
     },
     h2: {
-      fontFamily: "doidon bold",
+      fontFamily: "sarjeta bold",
       fontSize: "5rem",
       lineHeight: "4rem",
     },

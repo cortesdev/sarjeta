@@ -78,7 +78,7 @@ export const Typography: FC<TypographyProps> = (
   return (
     <StyledTypography
       className={truncate ? "truncate " + props.className : props.className}
-      fontFamily={`doidon ${weight ? weight : "regular"}`}
+      fontFamily={`sarjeta ${weight ? weight : "regular"}`}
       fontSize={size === "subtitle1" ? "1.1rem" : (fontSize as any)}
       lines={lines}
       variant={variant}

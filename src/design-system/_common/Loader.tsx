@@ -13,7 +13,7 @@ const DivLoading = styled(Stack)`
     top: 0;
     bottom: 0;
 
-    background: rgb(0 0 0);
+    background: #FE6798;
     height: 100%;
     align-items: center;
     padding: 2rem 10rem;
@@ -39,14 +39,14 @@ export const Loader: FC = ({ ...props }) => {
     return (
         <DivLoading direction="column" className='loader'>
             <CenterVertical>
-                <img src="/images/SVG/logo-rot.svg" alt="doidon brand home" width={400} height={450} />
+                <img src="/images/SVG/logo-vert.svg" alt="sarjeta brand home" width={400} height={450} />
 
                 <CenterTitle>
                     <OneLine>
                         <Typography size='16px'>
                             Carregando
                             <FlexSpacer minWidth={1} />
-                            <img src="/images/loader.gif" alt="doidon loader" width={20} height={20} style={{ filter: 'invert(1)' }} />
+                            <img src="/images/loader.gif" alt="sarjeta loader" width={20} height={20} style={{ filter: 'invert(1)' }} />
                         </Typography>
                     </OneLine>
                 </CenterTitle>
