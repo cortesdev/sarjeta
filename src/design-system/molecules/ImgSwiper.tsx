@@ -78,14 +78,14 @@ const ImgSwiper = () => {
                 >
                     <SwiperSlide data-caption={item.url} key={item.url + index}>
 
-                        <Box>
+                        <div>
 
                             <img src={item.url} alt="img" style={{ maxWidth: '50%', minWidth: '200px', margin: '10% 10%' }} />
 
                             {/* <Typography id="modal-modal-description" color="white" sx={{ mt: 2 }}>
                                 {item.text}
                             </Typography> */}
-                        </Box>
+                        </div>
 
                     </SwiperSlide>
 

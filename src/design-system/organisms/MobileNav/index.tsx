@@ -61,15 +61,15 @@ const MobileNav: FC<MobileNavProps> = () => {
       };
 
   const list = (anchor: Anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+    <div
+      style={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <Toolbar sx={{ minHeight: '100px !important' }} />
       <MobileNavItems />
-    </Box>
+    </div>
   );
 
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -82,14 +82,14 @@ const MobileNav: FC<MobileNavProps> = () => {
           justifyContent: 'space-between',
           padding: theme.padding.default
         }}>
-        <Box onClick={() => navigate('/')} sx={{ cursor: 'pointer' }}>
+        <div onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
           <img
             style={{ margin: 'auto 0' }}
             src="/images/SVG/logo-horiz.svg"
             alt="sarjeta logo"
             width={100}
           />
-        </Box>
+        </div>
 
         {([`left`] as const).map((anchor) => (
           <React.Fragment key={anchor}>

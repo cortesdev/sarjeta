@@ -94,7 +94,7 @@ export const MobileNavItems: FC = ({ ...props }) => {
 
 
   return (
-    <Box className="navigation">
+    <div className="navigation">
       <StyledList style={{ margin: '0 10px' }}>
         <Link
           to="/#home"
@@ -167,6 +167,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
         </Link>
 
       </StyledList>
-    </Box>
+    </div>
   );
 }

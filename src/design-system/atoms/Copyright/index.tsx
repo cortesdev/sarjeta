@@ -7,16 +7,15 @@ export const Copyright = ({ ...props }) => {
   const isTablet = useMediaQuery(theme.breakpoints.down('lg'));
 
   return (
-    <Box
-      justifyContent={isMobile ? 'center' : 'flex-end'}
-      textAlign={isMobile ? "center" : "right"}
-      display="flex"
-      my={isMobile ? "10px" : "0"}>
+    <div
+      style={{ justifyContent: isMobile ? 'center' : 'flex-end', margin: isMobile ? "10px 0" : "0 0",display: 'flex',textAlign: isMobile ? "center" : "right" }}
+
+      >
       <Typography size="small" mr="0" >
         Copyright {'© '}
         {`${new Date().getFullYear()} `}
         Coletivo Sarjeta{isMobile ? '' : '-'}  <br />  todos os direitos reservados
       </Typography>
-    </Box>
+    </div>
   )
 }
