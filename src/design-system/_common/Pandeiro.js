@@ -14,9 +14,9 @@ export default function Pandeiro({ ...props }) {
   const { nodes, materials } = useGLTF('/pandeiro.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 3, .5, .2]}>
-        <group rotation={[Math.PI / 3, .5, .2]} scale={0.01}>
-           <group scale={300}>
+      <group rotation={[-Math.PI / -3, .4, -.2]}>
+        <group rotation={[Math.PI / -3, .8, .2]} scale={0.01}>
+           <group scale={320}>
             <mesh geometry={nodes.Object_4.geometry} material={materials.initialShadingGroup} />
             <mesh geometry={nodes.Object_5.geometry} material={materials.lambert4SG} />
             <mesh geometry={nodes.Object_6.geometry} material={materials.lambert2SG} />
