@@ -69,16 +69,16 @@ a {
 }
 
 @font-face {
-  font-family: "sarjeta zombie";
-  src: url("../fonts/Zombie.woff2");
+  font-family: "sarjeta old";
+  src: url("../fonts/sarjeta-black.woff2");
   font-style: normal;
   font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "sarjeta old";
-  src: url("../fonts/Old-Press.woff2");
+  font-family: "sarjeta black";
+  src: url("../fonts/sarjeta-black.woff2");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -94,7 +94,7 @@ a {
 
 @font-face {
   font-family: "sarjeta light";
-  src: url("../fonts/doidon-Light.woff");
+  src: url("../fonts/sarjeta-Light.woff");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -102,7 +102,7 @@ a {
 
 @font-face {
   font-family: "sarjeta thin";
-  src: url("../fonts/doidon-Thin.woff");
+  src: url("../fonts/sarjeta-Thin.woff");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -110,7 +110,7 @@ a {
 
 @font-face {
   font-family: "sarjeta regular";
-  src: url("../fonts/doidon-Regular.woff");
+  src: url("../fonts/sarjeta-Regular.woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -118,17 +118,9 @@ a {
 
 @font-face {
   font-family: "sarjeta medium";
-  src: url("../fonts/doidon-Medium.woff");
+  src: url("../fonts/sarjeta-Medium.woff");
   font-style: medium;
   font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "sarjeta bold";
-  src: url("../fonts/doidon-Bold.woff");
-  font-style: bold;
-  font-weight: 700;
   font-display: swap;
 }
 

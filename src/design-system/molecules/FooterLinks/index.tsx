@@ -22,7 +22,7 @@ const FooterLinks = () => {
                         //  sx={{ transform: 'rotate(2deg)' }}
                         >
                             <Link to="#home" smooth>
-                                <Typography size="body">home</Typography>
+                                <Typography size="light">home</Typography>
                             </Link>
                         </StyledListItem>
                        
@@ -30,7 +30,7 @@ const FooterLinks = () => {
                         // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
                         >
                             <Link to="#agenda" smooth>
-                                <Typography size="body">agenda</Typography>
+                                <Typography size="light">agenda</Typography>
 
                             </Link>
                         </StyledListItem>
@@ -38,7 +38,7 @@ const FooterLinks = () => {
                         // sx={{ transform: 'rotate(3deg)' }}
                         >
                             <Link to="#videos" smooth>
-                                <Typography size="body">videos</Typography>
+                                <Typography size="light">videos</Typography>
 
                             </Link>
                         </StyledListItem>
@@ -46,7 +46,7 @@ const FooterLinks = () => {
                         // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
                         >
                             <Link to="#contact" smooth>
-                                <Typography size="body">contato</Typography>
+                                <Typography size="light">contato</Typography>
                             </Link>
                         </StyledListItem>
                     </Stack>

@@ -6,7 +6,7 @@ import Typography from '../../atoms/Typography';
 
 
 const StyledListItem = styled(ListItem)`
-text-shadow: 2px 7px 5px #0000008a;
+text-shadow: 2px 7px 5px #8500748a;
 
 &:hover {
     transform: scale(.88);
@@ -25,7 +25,7 @@ const Navbar = () => {
                 //  sx={{ transform: 'rotate(2deg)' }}
                 >
                     <StyledLink to="#home" smooth>
-                        <Typography size="h3" weight='old'>home</Typography>
+                        <Typography size="h4" weight='light'>home</Typography>
                     </StyledLink>
                 </StyledListItem>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                 // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
                 >
                     <StyledLink to="#agenda" smooth>
-                        <Typography size="h3" weight='old'>agenda</Typography>
+                        <Typography size="h4" weight='light'>agenda</Typography>
 
                     </StyledLink>
                 </StyledListItem>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 // sx={{ transform: 'rotate(3deg)' }}
                 >
                     <StyledLink to="#videos" smooth>
-                        <Typography size="h3" weight='old'>videos</Typography>
+                        <Typography size="h4" weight='light'>videos</Typography>
 
                     </StyledLink>
                 </StyledListItem>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
                 >
                     <StyledLink to="#contact" smooth>
-                        <Typography size="h3" weight='old'>contato</Typography>
+                        <Typography size="h4" weight='light'>contato</Typography>
                     </StyledLink>
                 </StyledListItem>
                

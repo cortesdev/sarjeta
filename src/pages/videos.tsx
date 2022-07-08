@@ -20,13 +20,13 @@ const Videos: FC<VideosProps> = ({ pageWidth }) => {
         <Videos id="videos">
 
 
-            <Typography size='h2' weight='old'>
+            <Typography size='h3' weight='old'>
                 Videos
             </Typography>
             <FlexSpacer minHeight={3} />
 
 
-            <Typography size='h3' weight='old'>
+            <Typography size='h4' weight='old'>
                 Youtube
             </Typography>
             <FlexSpacer minHeight={3} />

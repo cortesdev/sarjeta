@@ -33,10 +33,10 @@ const Header: FC<HeaderProps> = ({ pageWidth }) => {
 
     return (
         <StyledHeader className={scroll ? "bg-light" : "bg-dark"}        >
-            <StyledContainer direction="row" justifyContent="space-between">
+            <StyledContainer direction="row" justifyContent="space-between" sx={{ maxHeight: 100 }}>
                 <Link href='/'>
-                    <img src="/images/SVG/logo-horiz.svg" 
-                     height={!scroll ? 120 : 100} alt="logo" />
+                    <img src="/images/SVG/logo-horiz.svg"
+                        height={!scroll ? 120 : 100} alt="logo" />
                 </Link>
 
                 <Navbar />

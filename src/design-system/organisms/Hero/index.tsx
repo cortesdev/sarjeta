@@ -55,20 +55,27 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
       <HeroCenter direction="row" justifyContent="space-between" sx={{ maxWidth: '100%', display: 'flex', height: '89vh' }}>
 
 
-        <Stack direction="column" marginTop={{ xs: '0', md: "auto" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
+        <Stack direction="column" marginTop={{ xs: '0', md: "14%" }} width={{ xs: '100%' }} mb="5%" ml={"8%"} color="white" zIndex={999}>
 
           {!isMobile ? <>
             <div>
 
-              <Typography size='h3' weight='old' mb={2}>Bem-vindo ao</Typography>
+              <Typography size='h3' weight='light' mb={4}>Bem-vindo ao</Typography>
 
-              <Typography size='h1' weight='old'
+              <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
-                Samba de Sarjeta</Typography>
+                Samba </Typography>
+
+                <Typography size='h3' weight='old' ml={-2}
+                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                 de </Typography>
+                <Typography size='h2' weight='old'
+                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                Sarjeta</Typography>
             </div>
           </>
             : <>
-              <Typography size='h3' weight='old' mb={1}>Bem-vindo ao</Typography>
+              <Typography size='h3' weight='light' mb={1}>Bem-vindo ao</Typography>
 
               <Typography size='h2' weight='old'>Samba de sarjeta</Typography>
             </>
@@ -77,7 +84,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
 
 
         </Stack>
-        <Stack direction="column" marginTop={{ xs: '0', md: "auto" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
+        <Stack direction="column" marginTop={{ xs: '0', md: "2%" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
           {/* <InstagramFeed token="your_access_token"  counter="6"/>   */}
           <Wrapper>
             <Canvas className="canvas">
