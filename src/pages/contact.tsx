@@ -62,7 +62,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           </Typography>
           <FlexSpacer minHeight={1} />
         </Grid>
-
+{/* 
         <Grid item xs={12} md={4}>
           <Typography size='h4' weight='old'>
             Acessoria de imprensa
@@ -89,7 +89,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           </Typography>
           <FlexSpacer minHeight={1} />
 
-        </Grid>
+        </Grid> */}
       </Grid>
 
 
