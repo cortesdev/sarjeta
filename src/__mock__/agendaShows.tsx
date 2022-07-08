@@ -6,10 +6,10 @@ export const agendaShows = [
         hora: ''
     },
     {
-        dia: '23',
+        dia: '09',
         mes: 'Julho',
-        local: 'Audio Rebel - Botafogo',
-        hora: '18:00'
+        local: 'LAROYÊ - TrautenauStr 5, Berlin',
+        hora: '16:00'
     },
     {
         dia: '',

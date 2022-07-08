@@ -50,7 +50,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
                 <Stack direction='row' justifyContent={'start'} p="0 1rem 0 0 " width="100%">
 
                   <Stack direction="column" alignItems="center">
-                    <Typography size="h2" weight='old'>
+                    <Typography size="h3" weight='old'>
                       {item.dia}
                     </Typography>
                     <Typography size='body'>

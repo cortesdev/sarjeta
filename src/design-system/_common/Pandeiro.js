@@ -9,9 +9,18 @@ title: Tamborine from Poly by Google
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
+
+  
+var camera, scene, renderer, light, model;
+
+if (model) {
+  Pandeiro.rotation.x += 0.01; 
+}
+
 export default function Pandeiro({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/pandeiro.gltf')
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / -3, .4, -.2]}>

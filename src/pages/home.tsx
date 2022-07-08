@@ -29,8 +29,8 @@ const Home: FC<HomeProps> = ({ pageWidth }) => {
         <FlexSpacer minHeight={5} />
         <FlexSpacer minHeight={5} />
         <Agenda />
-        <FlexSpacer minHeight={5} />
-        <Videos />
+        {/* <FlexSpacer minHeight={5} />
+        <Videos /> */}
         <FlexSpacer minHeight={5} />
       </Container>
     </>
