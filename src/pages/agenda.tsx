@@ -37,7 +37,8 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
             width: '53%',
             height: 310,
             objectFit: 'cover',
-            borderRadius: 20
+            borderRadius: 20,
+            boxShadow: '2px 72px 42px -30px #940045bf'
           }} />
 
         }

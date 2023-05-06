@@ -8,6 +8,7 @@ title: Tamborine from Poly by Google
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 import { useMediaQuery } from '@mui/material';
 import { theme } from '../../styles/theme';
 
@@ -24,6 +25,13 @@ export default function Pandeiro({ ...props }) {
   const { nodes, materials } = useGLTF('/pandeiro.gltf')
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
+
+
+  useFrame(({ clock }) => {
+    group.current.rotation.y = Math.sin(clock.getElapsedTime()) * Math.PI / 8
+  })
+
+ 
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / -3, .4, -.2]}>
