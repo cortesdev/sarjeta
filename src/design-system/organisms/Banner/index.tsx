@@ -21,10 +21,14 @@ import { theme } from '../../../styles/theme';
 
 const Wrapper = styled.div`
   position: relative;
-
   canvas {
-    height: 600px;
+    height: 360px;
   }
+  @media (min-width: 700px) {
+    canvas {
+      height: 600px;
+    }
+ }
 `;
 
 const ButtonStyled = styled(Link)`

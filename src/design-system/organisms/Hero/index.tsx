@@ -105,7 +105,7 @@ export default Hero
 const Wrapper = styled.div`
   position: relative;
   canvas {
-    height: 300px;
+    height: 360px;
   }
   @media (min-width: 700px) {
     canvas {
