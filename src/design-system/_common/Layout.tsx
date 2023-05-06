@@ -6,7 +6,7 @@ import Header from "../organisms/Header";
 import Footer from "../organisms/Footer";
 import Hero from "../organisms/Hero";
 import CopyrightFoot from "../molecules/CopyrightFoot";
-import Contact from "../../pages/Contact";
+import Contact from "../../pages/contact";
 import { FlexSpacer } from "../atoms/FlexSpacer";
 
 
