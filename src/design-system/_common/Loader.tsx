@@ -46,7 +46,7 @@ export const Loader: FC = ({ ...props }) => {
                         <Typography size='16px'>
                             Carregando
                             <FlexSpacer minWidth={1} />
-                            <img src="/images/loader.gif" alt="sarjeta loader" width={20} height={20} style={{ filter: 'invert(1)' }} />
+                            <img src="/images/loader.gif" alt="sarjeta loader" width={20} height={20} style={{}} />
                         </Typography>
                     </OneLine>
                 </CenterTitle>
