@@ -29,12 +29,11 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
         }
     `
     const StyledImage = styled.img`
-        width: 30px;
-        background: transparent;
-        border-radius: 50px;
-        // filter: invert(100%):
-        height: 50px;
-        padding: 4px;
+    width: 40px;
+    background: transparent;
+    border-radius: 50px;
+    height: 30px;
+    padding: 4px;
     `
 
     return (
