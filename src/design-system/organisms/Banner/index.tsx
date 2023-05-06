@@ -76,11 +76,11 @@ const Banner = () => {
                                     2000,
                                     'Baião',
                                     2000,
-                                    'Axe',
+                                    'Axé',
                                     2000,
                                     'MangueBeat',
                                     2000,
-                                    'Brasil',
+                                    '"Brasil"',
                                     5000
                                 ]}
                                 speed={50}

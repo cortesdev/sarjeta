@@ -32,7 +32,6 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
 
       <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
         {!isMobile &&
-
           <img src="/images/sarjetiros.jpeg" alt="logo" style={{
             width: '53%',
             height: 310,
@@ -40,7 +39,6 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
             borderRadius: 20,
             boxShadow: '2px 72px 42px -30px #940045bf'
           }} />
-
         }
 
         <Divider orientation="vertical" style={{ borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
