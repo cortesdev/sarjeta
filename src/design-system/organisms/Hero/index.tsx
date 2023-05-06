@@ -13,6 +13,7 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Pandeiro from '../../_common/Pandeiro'
+import Banner from '../Banner'
 
 
 interface HeroProps {
@@ -48,40 +49,37 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
 
   return (
     <Container direction={isMobile ? 'column' : 'row'} id="Hero">
-
-
       <HeroImage />
 
-
       <HeroCenter justifyContent="space-between" sx={{ maxWidth: '100%', display: 'flex', height: '89vh' }}>
-        <Stack direction="column" marginTop={{ xs: '0', md: "14%" }} width={{ xs: '100%' }} mb="5%" ml={"8%"} color="white" zIndex={999}>
+        <Stack direction="column" marginTop={{ xs: '0', md: "200px" }} width={{ xs: '100%' }} mb="5%" ml={"8%"} color="white" zIndex={999}>
 
           {!isMobile ? <>
             <div>
 
               <Typography size='h3' weight='light' mb={5}>Bem-vindx ao</Typography>
 
-              <Typography size='h1' weight='old'
+              <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '0px 20px 12px #9700398a' }}>
                 Samba </Typography>
 
-              <Typography size='h2' weight='old' ml={-2}
+              <Typography size='h3' weight='old' ml={-2}
                 sx={{ marginBottom: '0', textShadow: '2px 7px 5px #9700398a' }}>
                 de </Typography>
-              <Typography size='h1' weight='old'
+              <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '0px 30px 12px #9700398a' }}>
                 Sarjeta</Typography>
             </div>
           </>
             : <>
-              <Typography size='h3' weight='light' mb={5}>Bem-vindx ao</Typography>
+              <Typography size='h3' weight='light' mb={5} mt={5}>Bem-vindx ao</Typography>
               <Typography size='h2' weight='old'>Samba de sarjeta</Typography>
             </>
           }
 
-
-
+          <Banner />
         </Stack>
+
         <Stack direction="column" marginTop={{ xs: '0', md: "2%" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
           {/* <InstagramFeed token="your_access_token"  counter="6"/>   */}
           <Wrapper>
@@ -97,8 +95,6 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
         </Stack>
 
       </HeroCenter>
-
-
     </Container >
   )
 }
