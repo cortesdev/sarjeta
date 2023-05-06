@@ -3,12 +3,9 @@ import { FC } from 'react'
 import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
 import Agenda from './agenda'
 import Parcerias from './parcerias'
-import Videos from './Videos'
+import Videos from './videos'
 import Sobre from './Sobre'
-// import Singles from './Singles'
-// import Videos from './videos'
-// import Parcerias from './parcerias'
-// import Banner from '../design-system/organisms/Banner'
+
 
 
 interface HomeProps {
