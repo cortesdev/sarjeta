@@ -7,9 +7,15 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+  width: 100%;
   background-color: #F8407C;
   color: white;
 }
+
+#root {
+  overflow: hidden;
+}
+
 
 body {
   margin: 0;
@@ -166,16 +172,27 @@ a,
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: 22px;
   background: transparent !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(128, 128, 128, 0.448);
-  border-radius: 10px;
+  background: rgba(0, 255, 128, 0.75);
+  border-radius: 15px;
 }
 
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgba(0, 255, 128, 0.75);
+  background: transparent;
+}
+
+::selection {
+  color: rgba(0, 255, 128, 0.75);
+  background: transparent;
+}
 
 .bg-light {
   background-color: rgba(255, 0, 83, 0.75);
@@ -185,8 +202,6 @@ a,
   background-color: transparent;
   color: white;
 }
-
-
 
 
 hr {

@@ -67,8 +67,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                         <HashLink to="#home" smooth>
                             <img src="/images/SVG/logo-vert.svg"
                                 alt="logo"
-                                height={100}
-                                style={{ display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
+                                style={{ height: 200, display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
                         </HashLink>
 
                     </Grid>
