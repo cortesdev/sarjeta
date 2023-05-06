@@ -36,7 +36,8 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
           <img src="/images/sarjetiros.jpeg" alt="logo" style={{
             width: '53%',
             height: 310,
-            objectFit: 'cover'
+            objectFit: 'cover',
+            borderRadius: 20
           }} />
 
         }
