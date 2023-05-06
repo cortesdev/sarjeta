@@ -35,7 +35,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
     
     width: 100%;
     position: absolute;
-    
+
     @media (min-width: 700px) {        
         height: 100%;
    }
@@ -77,7 +77,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
           </>
             : <>
               <Typography size='h3' weight='light' mb={5} mt={5}>Bem-vindx ao</Typography>
-              <Typography size='h2' weight='old'>Samba de sarjeta</Typography>
+              <Typography size='h2' weight='old'>Samba <br />  de sarjeta</Typography>
             </>
           }
 
@@ -109,7 +109,7 @@ export default Hero
 const Wrapper = styled.div`
   position: relative;
   canvas {
-    height: 360px;
+    height: 240px;
   }
   @media (min-width: 700px) {
     canvas {

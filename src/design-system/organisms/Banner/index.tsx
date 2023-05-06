@@ -22,7 +22,7 @@ import { theme } from '../../../styles/theme';
 const Wrapper = styled.div`
   position: relative;
   canvas {
-    height: 360px;
+    height: 240px;
   }
   @media (min-width: 700px) {
     canvas {
