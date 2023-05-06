@@ -5,6 +5,8 @@ import Agenda from './agenda'
 import Parcerias from './parcerias'
 import Videos from './videos'
 import Sobre from './Sobre'
+import { useMediaQuery } from '@mui/material';
+import { theme } from '../styles/theme';
 
 
 
@@ -13,6 +15,7 @@ interface HomeProps {
 }
 
 const Home: FC<HomeProps> = ({ pageWidth }) => {
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
 
   const Container = styled.div`
@@ -26,7 +29,7 @@ const Home: FC<HomeProps> = ({ pageWidth }) => {
 
         {/* Subpaginas */}
         {/* <Singles /> */}
-        <FlexSpacer minHeight={5} />
+        <FlexSpacer minHeight={isMobile ? 8 : 5} />
         <Sobre />
         <FlexSpacer minHeight={5} />
         <Agenda />
