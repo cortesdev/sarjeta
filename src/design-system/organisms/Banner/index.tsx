@@ -60,7 +60,7 @@ const Banner = () => {
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.div
                         variants={fadeIn('up', 0.4)}
-                        initial={isMobile ? 'visible' : 'hidden'}
+
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='mb-6 text-[36px] lg:text-[60px] font-secondary
@@ -90,7 +90,7 @@ const Banner = () => {
                     </motion.div>
                     <motion.p
                         variants={fadeIn('up', 0.5)}
-                        initial={isMobile ? 'visible' : 'hidden'}
+
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='mb-8 max-w-lg mx-auto lg:mx-0'
@@ -100,7 +100,7 @@ const Banner = () => {
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
-                        initial={isMobile ? 'visible' : 'hidden'}
+
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
@@ -108,7 +108,7 @@ const Banner = () => {
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.7)}
-                        initial={isMobile ? 'visible' : 'hidden'}
+
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
@@ -129,7 +129,7 @@ const Banner = () => {
                 {/* image */}
                 <motion.div
                     variants={fadeIn('down', 0.5)}
-                    initial={isMobile ? 'visible' : 'hidden'}
+
                     whileInView={'show'}
                     style={{ maxWidth: '50%' }}
                     className='lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
