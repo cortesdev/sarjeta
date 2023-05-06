@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
 const ButtonStyled = styled(Link)`
  
-    background-image:  linear-gradient(to right, #00e151 0%, #01d4ce  51%, #00ef8c  100%);
+    background-image:  linear-gradient(to right, #00ef8c 0%, #01d4ce  51%, #00e151  100%);
     margin: 20px 0;
     padding: 15px 45px;
     text-align: center;

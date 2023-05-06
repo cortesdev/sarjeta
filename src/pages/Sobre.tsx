@@ -38,16 +38,16 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
 
             <Grid container spacing={4} margin="0 auto">
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa1.png" alt="capa" width="95%" />
+                    <img src="/images/capa1.png" className="boxShadow" alt="capa" width="95%" />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa2.png" alt="capa" width="95%" />
+                    <img src="/images/capa2.png" className="boxShadow" alt="capa" width="95%" />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa3.png" alt="capa" width="95%" />
+                    <img src="/images/capa3.png" className="boxShadow" alt="capa" width="95%" />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa4.png" alt="capa" width="95%" />
+                    <img src="/images/capa4.png" className="boxShadow" alt="capa" width="95%" />
                 </Grid>
             </Grid>
         </Sobre>

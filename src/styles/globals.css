@@ -213,3 +213,7 @@ hr {
   background-color: #F8407C;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
+
+.boxShadow {
+  box-shadow: rgba(148, 0, 69, 0.75) 2px 72px 42px -30px;
+}
