@@ -25,18 +25,15 @@ export default function Pandeiro({ ...props }) {
   const { nodes, materials } = useGLTF('/pandeiro.gltf')
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-
-
   useFrame(({ clock }) => {
     group.current.rotation.y = Math.sin(clock.getElapsedTime()) * Math.PI / 8
   })
-
  
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / -3, .4, -.2]}>
         <group rotation={[Math.PI / -3, .8, .2]} scale={0.01}>
-           <group scale={isMobile ? 220 : 300}>
+           <group scale={isMobile ? 285 : 300}>
             <mesh geometry={nodes.Object_4.geometry} material={materials.initialShadingGroup} />
             <mesh geometry={nodes.Object_5.geometry} material={materials.lambert4SG} />
             <mesh geometry={nodes.Object_6.geometry} material={materials.lambert2SG} />
