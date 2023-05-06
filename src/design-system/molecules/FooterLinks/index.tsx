@@ -59,8 +59,13 @@ const FooterLinks = () => {
                 <List sx={{ alignSelf: 'center', }}>
                     <Stack direction="column">
                         <StyledListItem style={{ display: 'block' }}>
-                            <Typography size="bold">Historia</Typography>
-                            <Typography size="small">O encontro se deu na calçada numa noite quente de verão onde musicos iam se juntando aos poucos a um violão, um pandeiro e algumas vozes, o dia ia amanhecendo e na sarjeta nos tornamos 6 musicos a improvisar musicas brasileiras em berlin, se torando um samba de sarjeta.</Typography>
+                            <Typography size="bold">Localização</Typography>
+                            <Typography size="small">Berlin</Typography>
+                        </StyledListItem>
+
+                        <StyledListItem style={{ display: 'block' }}>
+                            <Typography size="bold">Contato para shows</Typography>
+                            <Typography size="small">+49 157 56565257</Typography>
                         </StyledListItem>
 
                         <StyledListItem style={{ display: 'block' }}>

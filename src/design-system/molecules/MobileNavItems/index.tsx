@@ -112,20 +112,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
 
 
 
-        {/* <Link
-          to="/#videos"
-          style={{
-            minHeight: 48,
-            padding: 1
-          }
-          }>
-          <StyledListItem sx={{ paddingLeft: '12px' }}>
-            <div style={{ display: 'inline-flex' }}  >
-              <ListItemText primary="Videos" sx={{ fontSize: '14px' }} />
-            </div>
-          </StyledListItem>
-        </Link> */}
-
         <Link to="#agenda"
           style={{
             minHeight: 48,
@@ -138,6 +124,24 @@ export const MobileNavItems: FC = ({ ...props }) => {
             </div>
           </StyledListItem>
         </Link>
+
+
+
+
+        <Link
+          to="/#videos"
+          style={{
+            minHeight: 48,
+            padding: 1
+          }
+          }>
+          <StyledListItem sx={{ paddingLeft: '12px' }}>
+            <div style={{ display: 'inline-flex' }}  >
+              <ListItemText primary="Videos" sx={{ fontSize: '14px' }} />
+            </div>
+          </StyledListItem>
+        </Link>
+
 
         <Link to="#contact"
           style={{

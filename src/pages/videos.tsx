@@ -25,21 +25,17 @@ const Videos: FC<VideosProps> = ({ pageWidth }) => {
             </Typography>
             <FlexSpacer minHeight={3} />
 
-
-            <Typography size='h4' weight='old'>
-                Youtube
-            </Typography>
             <FlexSpacer minHeight={3} />
 
             <Grid container spacing={4} margin="0 auto">
                 <Grid item xs={12} md={4}>
-                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/zIB802dOk0A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="95%" height="548" src="https://www.youtube.com/embed/9cOeEj7iQpI" title="Nada mal sarjeteiro" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/9DyQk5nBEl8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="95%" height="548" src="https://www.youtube.com/embed/0rMs0zKD2Uw" title="6. May 2023" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </Grid>
                 <Grid item xs={12} md={4}>
-                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/ROSaLO8W2rY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="95%" height="548" src="https://www.youtube.com/embed/OYnfNkf4aH4" title="Mangueira - historia pra ninar gente grande" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </Grid>
             </Grid>
         </Videos>

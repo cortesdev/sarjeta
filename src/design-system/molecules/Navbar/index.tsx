@@ -38,14 +38,15 @@ const Navbar = () => {
 
                     </StyledLink>
                 </StyledListItem>
-                {/* <StyledListItem
+
+                <StyledListItem
                 // sx={{ transform: 'rotate(3deg)' }}
                 >
                     <StyledLink to="#videos" smooth>
                         <Typography size="h4" weight='light'>videos</Typography>
 
                     </StyledLink>
-                </StyledListItem> */}
+                </StyledListItem>
                 <StyledListItem
                 // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
                 >
@@ -53,7 +54,7 @@ const Navbar = () => {
                         <Typography size="h4" weight='light'>contato</Typography>
                     </StyledLink>
                 </StyledListItem>
-               
+
             </Stack>
         </List>
 
