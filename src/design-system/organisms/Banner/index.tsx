@@ -1,8 +1,7 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 // Images
-import Image from '../assets/avatar.svg';
 // Icons
-import { FaGithub, FaYoutube, FaDribbble, FaInstagram } from 'react-icons/fa';
+import { FaYoutube, FaInstagram } from 'react-icons/fa';
 // Type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -14,7 +13,7 @@ import Pandeiro from '../../_common/Pandeiro';
 import { Canvas } from '@react-three/fiber';
 import styled from '@emotion/styled';
 import { Stack } from '@mui/system';
-import { Button, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
 import { theme } from '../../../styles/theme';
 
@@ -27,6 +26,7 @@ const Wrapper = styled.div`
     height: 600px;
   }
 `;
+
 const ButtonStyled = styled(Link)`
  
     background-image:  linear-gradient(to right, #00e151 0%, #01d4ce  51%, #00ef8c  100%);
@@ -53,8 +53,6 @@ const ButtonStyled = styled(Link)`
 const Banner = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-
-
     return (<section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
         <div style={{ margin: '60px auto 0' }}>
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
@@ -62,7 +60,7 @@ const Banner = () => {
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.div
                         variants={fadeIn('up', 0.4)}
-                        initial='hidden'
+                        initial={isMobile ? 'visible' : 'hidden'}
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='mb-6 text-[36px] lg:text-[60px] font-secondary
@@ -92,7 +90,7 @@ const Banner = () => {
                     </motion.div>
                     <motion.p
                         variants={fadeIn('up', 0.5)}
-                        initial='hidden'
+                        initial={isMobile ? 'visible' : 'hidden'}
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='mb-8 max-w-lg mx-auto lg:mx-0'
@@ -102,7 +100,7 @@ const Banner = () => {
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
-                        initial='hidden'
+                        initial={isMobile ? 'visible' : 'hidden'}
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
@@ -110,7 +108,7 @@ const Banner = () => {
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.7)}
-                        initial='hidden'
+                        initial={isMobile ? 'visible' : 'hidden'}
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
@@ -131,10 +129,10 @@ const Banner = () => {
                 {/* image */}
                 <motion.div
                     variants={fadeIn('down', 0.5)}
-                    initial='hidden'
+                    initial={isMobile ? 'visible' : 'hidden'}
                     whileInView={'show'}
                     style={{ maxWidth: '50%' }}
-                    className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+                    className='lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
 
                     <Wrapper>
                         <Canvas className="canvas">
@@ -147,12 +145,8 @@ const Banner = () => {
                         </Canvas>
                     </Wrapper>
                 </motion.div>
-
             </div>
-
         </div>
-
-
     </section>
     );
 };

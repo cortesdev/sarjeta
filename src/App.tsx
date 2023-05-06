@@ -23,7 +23,7 @@ const App: FC<AppProps> = () => {
   const setDataTimeout = () => {
     setTimeout(() => {
       setData(true);
-    
+
     }, 3500);
   }
 
@@ -33,18 +33,17 @@ const App: FC<AppProps> = () => {
       .then((res) => res.json())
       .then((data) => setData(data.message));
 
-      setDataTimeout()
-      console.log(data);
+    setDataTimeout()
+    console.log(data);
   }, []);
 
 
   return (
-    <div className="App">
-
+    <div className="App container">
       <ThemeProvider theme={theme}>
         <Router />
-        {!data ?  <Loader /> : ''} 
- 
+        {!data ? <Loader /> : ''}
+
       </ThemeProvider>
     </div>
   );

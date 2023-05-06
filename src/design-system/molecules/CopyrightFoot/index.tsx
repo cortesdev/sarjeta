@@ -1,7 +1,6 @@
-import { Box, Divider, Grid, Link, Stack, useMediaQuery } from '@mui/material'
+import { Divider, Grid, Stack, useMediaQuery } from '@mui/material'
 import { FC } from 'react'
 import { Copyright } from '../../atoms/Copyright'
-
 import Typography from '../../atoms/Typography'
 import { theme } from '../../../styles/theme'
 
@@ -27,7 +26,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
                 <Grid item xs={12} md={6} alignSelf='center'>
                     <Stack direction="row">
                         <Typography size='small'>Desenvolvedor: Ricardo</Typography>
-                        <Divider orientation="vertical" style={{ margin: '0 .5rem', }} flexItem />
+                        <Divider orientation="vertical" style={{ margin: '0 .5rem' }} flexItem />
                         <Typography size='small'><a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de - germany</a></Typography>
                     </Stack>
                 </Grid>
