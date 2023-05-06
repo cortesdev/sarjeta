@@ -1,5 +1,3 @@
-
-
 :root {
   --space-default: 1.875;
 }
@@ -18,11 +16,12 @@
   background: transparent;
   opacity: 1;
   font-weight: bold;
-} 
+}
 
 :root .MuiBackdrop-root {
-  background-color: rgba(0, 3, 31, 0.5) ;
+  background-color: rgba(0, 3, 31, 0.5);
 }
+
 :root .MuiPopover-root .MuiBackdrop-root {
   background-color: transparent;
 }
@@ -33,7 +32,7 @@
 
 :root .MuiButton-root {
   font-family: "sarjeta medium";
-  font-size: .875rem ;
+  font-size: .875rem;
 }
 
 :root .MuiButton-sizeLarge {
@@ -41,18 +40,22 @@
   min-width: fit-content;
 }
 
-:root  .MuiTypography-body {
-  font-size: .875rem ;
+:root .MuiTypography-body {
+  font-size: .875rem;
 }
+
 :root .MuiTypography-body1 {
-  font-size: .875rem ;
+  font-size: .875rem;
 }
+
 :root .MuiTypography-body2 {
   font-size: .875rem;
 }
+
 :root .MuiButton-outlined {
   border-color: #D9D9D9;
 }
+
 :root .MuiButtonBase-root {
   color: #fff;
 }
@@ -88,9 +91,9 @@
   white-space: pre-wrap;
   text-align: center;
 }
- 
 
-.MuiAutocomplete-root .MuiInput-root{
+
+.MuiAutocomplete-root .MuiInput-root {
   flex-direction: column-reverse;
   width: 100%;
 }
@@ -106,10 +109,10 @@
 
 :root .MuiAutocomplete-root .MuiChip-root {
 
-background-color: blue !important;
-border-radius: 5px !important;
-margin-right: 0.2rem;
-color: white;
+  background-color: blue !important;
+  border-radius: 5px !important;
+  margin-right: 0.2rem;
+  color: white;
 }
 
 :root .MuiAutocomplete-root .MuiChip-root svg {
@@ -118,10 +121,10 @@ color: white;
 
 :root .chip-small {
   position: absolute !important;
-  left: 31px !important; 
-  top: -10px !important; 
-  width: 18px !important; 
-  height: 18px !important; 
+  left: 31px !important;
+  top: -10px !important;
+  width: 18px !important;
+  height: 18px !important;
   z-index: 999
 }
 
@@ -135,11 +138,11 @@ color: white;
 
 @media (max-width: 768px) {
   :root .MuiGrid-root .MuiGrid-item {
-     padding-left: 0;
-   }
- }
- 
+    padding-left: 0;
+  }
+}
 
- :root .MuiPaper-root.MuiDrawer-paper {
-  background-color: black !important;
- }
+
+:root .MuiPaper-root.MuiDrawer-paper {
+  background-color: #ff7790 !important;
+}

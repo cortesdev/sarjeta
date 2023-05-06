@@ -32,25 +32,31 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
 
       <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
         {!isMobile &&
-          <img src="/images/foto.jpg" alt="logo" width="50%" />
+
+          <img src="/images/sarjetiros.jpeg" alt="logo" style={{
+            width: '53%',
+            height: 310,
+            objectFit: 'cover'
+          }} />
+
         }
 
-        <Divider orientation="vertical"  style={{borderColor: "rgba(255, 255, 255, .2)"}} flexItem />
- 
-        <Stack direction="column" width={{ xs: '100%', md: '41%'}}>
-          <iframe title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/37i9dQZF1EQrjpWhpIezMF?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <Divider orientation="vertical" style={{ borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
+
+        <Stack direction="column" width={{ xs: '100%', md: '41%' }}>
+          <iframe title="spotify" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/4yqdof4pVO6pdLPvuHLWHm?si=70e5fab0cc3141ad" width="100%" height="380" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           <StyledList>
 
-            <Typography size="h3" weight='old' mb={3}  mt={3}>
+            <Typography size="h3" weight='old' mb={3} mt={3}>
               Proximos eventos
             </Typography>
 
             {agendaShows.map((item, index) =>
-              <ListItem key={index} sx={{paddingLeft: 0}}>
+              <ListItem key={index} sx={{ paddingLeft: 0 }}>
                 <Stack direction='row' justifyContent={'start'} p="0 1rem 0 0 " width="100%">
 
                   <Stack direction="column" alignItems="center">
-                    <Typography size="h3" weight='old' margin="1rem 0 1.5rem ">
+                    <Typography size="h3" weight='old' margin="1rem 0 0">
                       {item.dia}
                     </Typography>
                     <Typography size='body'>

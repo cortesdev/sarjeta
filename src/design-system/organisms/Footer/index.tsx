@@ -30,8 +30,10 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
     `
     const StyledImage = styled.img`
         width: 30px;
-        background: white;
+        background: transparent;
         border-radius: 50px;
+        // filter: invert(100%):
+        height: 50px;
         padding: 4px;
     `
 
@@ -51,10 +53,10 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
                             <List style={{ minWidth: '100px', maxWidth: '100%', marginLeft: isMobile ? 'start' : 'auto' }}>
                                 <Stack direction="row">
-                                    {socialMedia.map((item, index) => (
+                                    {socialMedia.map((item) => (
                                         <Link
                                             target="_blank" href={item.url}
-                                            width={{ xs: '30%', md: 'inherit' }}
+                                            width={{ xs: '10%', md: 'inherit' }}
                                             sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
                                             <StyledImage src={item.src} alt={item.alt} />
                                         </Link>

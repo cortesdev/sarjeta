@@ -1,21 +1,21 @@
 export const agendaShows = [
     {
-        dia: '',
-        mes: '',
-        local: '',
-        hora: ''
+        dia: '21',
+        mes: 'Junho',
+        local: 'Fete de la musique',
+        hora: '(A confirmar)'
     },
     {
-        dia: '09',
-        mes: 'Julho',
-        local: 'LAROYÊ - TrautenauStr 5, Berlin',
-        hora: '19:00 (A confirmar)'
+        dia: '23',
+        mes: 'Junho',
+        local: 'privado',
+        hora: '(A confirmar)'
     },
     {
-        dia: '',
-        mes: '',
-        local: '',
-        hora: ''
+        dia: '24',
+        mes: 'Junho',
+        local: 'Baiz ',
+        hora: '5pm'
     },
     {
         dia: '',

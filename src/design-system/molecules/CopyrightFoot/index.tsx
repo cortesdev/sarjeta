@@ -13,7 +13,11 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
-        <div style={{background: '#e9004c'}}>
+        <div style={{
+            background: 'rgb(0 229 132)',
+            color: '#fd105d',
+            fontWeight: 'bolder'
+        }}>
 
             <Grid container
                 className="footer"
@@ -22,7 +26,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
             >
                 <Grid item xs={12} md={6} alignSelf='center'>
                     <Stack direction="row">
-                        <Typography size='small'>Desenvolvedor</Typography>
+                        <Typography size='small'>Desenvolvedor: Ricardo</Typography>
                         <Divider orientation="vertical" style={{ margin: '0 .5rem', borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
                         <Typography size='small'><a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de - germany</a></Typography>
                     </Stack>
@@ -33,7 +37,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
                 </Grid>
             </Grid>
 
-        </div>
+        </div >
     )
 }
 

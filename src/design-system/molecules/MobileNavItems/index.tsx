@@ -110,19 +110,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
           </StyledListItem>
         </Link>
 
-        <Link
-          to="/#discografia"
-          style={{
-            minHeight: 48,
-            padding: 1
-          }
-          }>
-          <StyledListItem sx={{ paddingLeft: '12px' }}>
-            <div style={{ display: 'inline-flex' }}  >
-              <ListItemText primary="Discografia" sx={{ fontSize: '14px' }} />
-            </div>
-          </StyledListItem>
-        </Link>
 
 
         {/* <Link
@@ -163,7 +150,7 @@ export const MobileNavItems: FC = ({ ...props }) => {
               <ListItemText primary="Contato" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
-           
+
         </Link>
 
       </StyledList>
