@@ -25,7 +25,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
 
   return (
     <Container id="agenda">
-      <Typography size='h3' weight='old'>
+      <Typography style={{ opacity: isMobile ? 'hidden' : 'visible' }} size='h3' weight='old'>
         Agenda
       </Typography>
       <FlexSpacer minHeight={3} />
