@@ -27,7 +27,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
                 <Grid item xs={12} md={6} alignSelf='center'>
                     <Stack direction="row">
                         <Typography size='small'>Desenvolvedor: Ricardo</Typography>
-                        <Divider orientation="vertical" style={{ margin: '0 .5rem', borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
+                        <Divider orientation="vertical" style={{ margin: '0 .5rem', borderColor: "#b0003f1a" }} flexItem />
                         <Typography size='small'><a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de - germany</a></Typography>
                     </Stack>
                 </Grid>
