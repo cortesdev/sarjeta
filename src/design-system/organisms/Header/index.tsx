@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ pageWidth }) => {
             <StyledContainer direction="row" justifyContent="space-between" sx={{ maxHeight: 100 }}>
                 <Link href='/'>
                     <img src="/images/SVG/logo-horiz.svg"
-                        height={!scroll ? 120 : 100} alt="logo" />
+                        height={!scroll ? 120 : 70} alt="logo" />
                 </Link>
 
                 <Navbar />
