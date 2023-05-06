@@ -62,14 +62,14 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
               <Typography size='h3' weight='light' mb={5}>Bem-vindx ao</Typography>
 
               <Typography size='h1' weight='old'
-                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                sx={{ marginBottom: '0', textShadow: '0px 20px 12px #9700398a' }}>
                 Samba </Typography>
 
               <Typography size='h2' weight='old' ml={-2}
-                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #9700398a' }}>
                 de </Typography>
               <Typography size='h1' weight='old'
-                sx={{ marginBottom: '0', textShadow: '2px 7px 5px #0000008a' }}>
+                sx={{ marginBottom: '0', textShadow: '0px 30px 12px #9700398a' }}>
                 Sarjeta</Typography>
             </div>
           </>
