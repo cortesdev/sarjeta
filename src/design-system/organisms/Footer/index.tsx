@@ -69,7 +69,6 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                                 alt="logo"
                                 style={{ height: 200, display: 'flex', margin: isMobile ? '1.8rem auto 2rem auto ' : '1.8rem -.8rem 2rem auto ' }} />
                         </HashLink>
-
                     </Grid>
                 </Grid >
             </Stack >
