@@ -67,9 +67,9 @@ const Banner = () => {
                         viewport={{ once: false, amount: 0.7 }}
                         className='mb-6 text-[36px] lg:text-[60px] font-secondary
           font-semibold uppercase leading-[-1]'>
-                        <div style={{ fontSize: 22, fontWeight: 'bold' }}>
+                        <div style={{ fontSize: 32, fontWeight: 'bold' }}>
 
-                            <span style={{ marginBottom: 35 }}>Nos tocamos </span>
+                            <span style={{ marginBottom: 35 }}>Nós tocamos </span>
                             <TypeAnimation
                                 sequence={[
                                     'Samba',
@@ -98,7 +98,7 @@ const Banner = () => {
                         className='mb-8 max-w-lg mx-auto lg:mx-0'
                         style={{ width: isMobile ? '90%' : '440px' }}
                     >
-                        Do Brasil para o mundo, tocamos musica brasileira com a esperança de um teletransporte as origens.
+                        Do Brasil para o mundo, tocamos musica brasileira de teletransporte as origens.
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
