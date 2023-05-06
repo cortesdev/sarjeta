@@ -31,8 +31,13 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
   const HeroImage = styled(Stack)`
      background: url(/images/foto_horiz-min.jpg) no-repeat 50% 101%;
     background-size: cover;      
+    height: 60%;
     
-    height: 100%;
+    @media (min-width: 700px) {        
+        height: 100%;
+    }
+   }
+
     width: 100%;
     position: absolute;
 `
