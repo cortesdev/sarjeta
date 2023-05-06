@@ -38,16 +38,16 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
 
             <Grid container spacing={4} margin="0 auto">
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa1.png" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
+                    <img src="https://github.com/cortesdev/sarjeta/blob/main/public/images/Capa1.png?raw=true" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa2.png" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
+                    <img src="https://github.com/cortesdev/sarjeta/blob/main/public/images/Capa2.png?raw=true" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa3.png" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
+                    <img src="https://github.com/cortesdev/sarjeta/blob/main/public/images/Capa3.png?raw=true" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
                 </Grid>
                 <Grid item xs={12} md={3}>
-                    <img src="/images/capa4.png" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
+                    <img src="https://github.com/cortesdev/sarjeta/blob/main/public/images/Capa4.png?raw=true" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
                 </Grid>
             </Grid>
         </Sobre>
