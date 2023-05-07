@@ -23,7 +23,6 @@ const Videos: FC<VideosProps> = ({ pageWidth }) => {
             <Typography size='h3' weight='old'>
                 Videos
             </Typography>
-            <FlexSpacer minHeight={3} />
 
             <FlexSpacer minHeight={3} />
 
