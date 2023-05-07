@@ -86,7 +86,7 @@ const Banner = () => {
                                     5000
                                 ]}
                                 speed={50}
-                                className='text-accent'
+                                className='green'
                                 wrapper='span'
                                 repeat={Infinity}
                             />

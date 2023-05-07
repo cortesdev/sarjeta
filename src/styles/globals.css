@@ -217,3 +217,14 @@ hr {
 .boxShadow {
   box-shadow: rgba(148, 0, 69, 0.75) 2px 72px 42px -30px;
 }
+
+
+.green {
+  background-image: linear-gradient(to right, rgba(0, 255, 128, 0.75), #0ebbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.borderRadius {
+  border-radius: 20px;
+}
