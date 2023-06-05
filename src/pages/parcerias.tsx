@@ -40,7 +40,7 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
       <Grid container alignItems="center" rowSpacing={4}>
         {marcas.map((item) => (
           <Grid item xs={6} md={2} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <a href={item.link} >
+            <a href={item.link} target="_blank" rel="noreferrer">
               <img src={item.url} height={item.height} alt="logo"
                 style={{ marginBottom: '1rem', filter: item.contrast === "dark" ? 'invert(1)' : '' }}
               />
