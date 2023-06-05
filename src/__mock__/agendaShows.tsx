@@ -8,7 +8,7 @@ export const agendaShows = [
     {
         dia: '21',
         mes: 'June',
-        local: 'Fete de la musique',
+        local: 'Fête de la musique',
         hora: '(A confirmar)'
     },
     {
