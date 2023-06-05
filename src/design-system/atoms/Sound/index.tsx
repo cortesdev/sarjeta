@@ -97,7 +97,7 @@ export const Sound: FC = () => {
             {
                 soundOn && (
                     <ReactSound
-                        url="/tom.wav"
+                        url="http://ricardocortes.de/tom.wav"
                         playStatus={playStatus}
                         onLoading={handleSongLoading}
                         onPlaying={handleSongPlaying}
