@@ -9,9 +9,9 @@ import { Sound } from '../../atoms/Sound';
 const StyledListItem = styled(ListItem)`
 text-shadow: 2px 7px 5px #8500748a;
 
-&:hover {
-    transform: scale(.88);
-}
+    &:hover {
+        transform: scale(.88);
+    }
 }`;
 
 const StyledLink = styled(Link)`
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </StyledLink>
                 </StyledListItem>
 
-                <Sound />
+                {/* <Sound /> */}
             </Stack>
         </List>
 

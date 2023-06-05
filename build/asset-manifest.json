@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.607d9fe4.css",
-    "main.js": "/static/js/main.106bda15.js",
+    "main.css": "/static/css/main.0a275a78.css",
+    "main.js": "/static/js/main.7beded08.js",
     "static/js/787.78601263.chunk.js": "/static/js/787.78601263.chunk.js",
     "static/media/Old-Press-Italic.woff2": "/static/media/Old-Press-Italic.c1648977747bc2a4c445.woff2",
     "static/media/sarjeta-Medium.woff": "/static/media/sarjeta-Medium.7fcfcd999aaa95e46650.woff",
@@ -10,12 +10,12 @@
     "static/media/sarjeta-Thin.woff": "/static/media/sarjeta-Thin.9add7d16040dbc207b03.woff",
     "static/media/sarjeta-black.woff2": "/static/media/sarjeta-black.544e0cf0e9af629a7ef0.woff2",
     "index.html": "/index.html",
-    "main.607d9fe4.css.map": "/static/css/main.607d9fe4.css.map",
-    "main.106bda15.js.map": "/static/js/main.106bda15.js.map",
+    "main.0a275a78.css.map": "/static/css/main.0a275a78.css.map",
+    "main.7beded08.js.map": "/static/js/main.7beded08.js.map",
     "787.78601263.chunk.js.map": "/static/js/787.78601263.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.607d9fe4.css",
-    "static/js/main.106bda15.js"
+    "static/css/main.0a275a78.css",
+    "static/js/main.7beded08.js"
   ]
 }
