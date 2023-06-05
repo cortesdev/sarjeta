@@ -1,19 +1,19 @@
 export const agendaShows = [
     {
+        dia: '18',
+        mes: 'June',
+        local: 'VolksPark Fhain',
+        hora: '(Location in bio)'
+    },
+    {
         dia: '21',
-        mes: 'Junho',
+        mes: 'June',
         local: 'Fete de la musique',
         hora: '(A confirmar)'
     },
     {
-        dia: '23',
-        mes: 'Junho',
-        local: 'privado',
-        hora: '(A confirmar)'
-    },
-    {
         dia: '24',
-        mes: 'Junho',
+        mes: 'June',
         local: 'Baiz ',
         hora: '5pm'
     },
