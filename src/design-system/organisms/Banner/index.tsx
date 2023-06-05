@@ -1,5 +1,4 @@
-import { Suspense } from 'react';
-// Images
+
 // Icons
 import { FaYoutube, FaInstagram } from 'react-icons/fa';
 // Type animation
@@ -8,9 +7,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../../../utils/variants';
-import { OrbitControls } from '@react-three/drei';
-import Pandeiro from '../../_common/Pandeiro';
-import { Canvas } from '@react-three/fiber';
 import styled from '@emotion/styled';
 import { Stack } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
@@ -18,18 +14,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { theme } from '../../../styles/theme';
 
 
-
-const Wrapper = styled.div`
-  position: relative;
-  canvas {
-    height: 240px;
-  }
-  @media (min-width: 700px) {
-    canvas {
-      height: 600px;
-    }
- }
-`;
 
 const ButtonStyled = styled(Link)`
  
@@ -51,7 +35,6 @@ const ButtonStyled = styled(Link)`
     color: #fff;
     text-decoration: none;
   }
- 
 `;
 
 const Banner = () => {
