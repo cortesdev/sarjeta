@@ -12,7 +12,7 @@ interface ParceriasProps {
 
 
 const marcas = [
-  { url: '/images/SVG/maloca.svg', height: '30px', nome: '', contrast: '', link: 'www.maløca.de' },
+  { url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'www.maløca.de' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
@@ -23,22 +23,19 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
 
 
   const Container = styled(Box)`
-      width: ${pageWidth};
       margin: 0 auto;
- 
+      // background: #92033aff;
+
       & .MuiGrid-item:not(:first-child) {
         opacity: .35;
-        filter: invert(1);
-      }
-      
-      // &:not(:nth-child(2n)) {
-      //   opacity: 1;
-      // }
+        filter: saturation(1);
+      }      
   `
 
   return (
-    <Container id="Parcerias" mb={4} >
+    <Container id="Parcerias"  >
       <FlexSpacer minHeight={2} />
+
 
       <Grid container alignItems="center" rowSpacing={4}>
         {marcas.map((item) => (
@@ -52,7 +49,7 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
         ))}
       </Grid>
 
-      <FlexSpacer minHeight={5} />
+      <FlexSpacer minHeight={1} />
     </Container>
   )
 }

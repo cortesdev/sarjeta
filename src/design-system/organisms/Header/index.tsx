@@ -14,8 +14,8 @@ const StyledHeader = styled.header`
     width: 100%;
     top: 0;
     z-index: 9999;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 `;
 
 const StyledContainer = styled(Stack)`
