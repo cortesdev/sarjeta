@@ -61,7 +61,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                                         <FaFacebook />
                                     </Link>
                                     <Link
-                                        target="_blank" href='https://www.facebook.com/coletivo.sarjeta'
+                                        target="_blank" href='https://www.instagram.com/coletivo.sarjeta'
                                         width={{ xs: '10%', md: 'inherit' }}
                                         sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
                                         <FaInstagram />
