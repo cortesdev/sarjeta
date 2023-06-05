@@ -14,8 +14,8 @@ export const agendaShows = [
     {
         dia: '24',
         mes: 'June',
-        local: 'Baiz ',
-        hora: '5pm'
+        local: 'Park',
+        hora: '2pm'
     },
     {
         dia: '',

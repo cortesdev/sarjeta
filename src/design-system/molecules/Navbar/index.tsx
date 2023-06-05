@@ -36,7 +36,6 @@ const Navbar = () => {
                 >
                     <StyledLink to="#agenda" smooth>
                         <Typography size="h4" weight='light'>agenda</Typography>
-
                     </StyledLink>
                 </StyledListItem>
 
@@ -45,7 +44,6 @@ const Navbar = () => {
                 >
                     <StyledLink to="#videos" smooth>
                         <Typography size="h4" weight='light'>videos</Typography>
-
                     </StyledLink>
                 </StyledListItem>
                 <StyledListItem
