@@ -1,9 +1,8 @@
+import { FC } from 'react'
 import styled from '@emotion/styled'
 import { Grid, Link } from '@mui/material'
 import { Box } from '@mui/system'
-import React, { FC } from 'react'
 import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
-import Typography from '../design-system/atoms/Typography'
 
 
 interface ParceriasProps {
@@ -40,11 +39,11 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
       <Grid container alignItems="center" rowSpacing={4}>
         {marcas.map((item) => (
           <Grid item xs={6} md={2} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <a href={item.link} target="_blank">
+            <Link href={item.link} target="_blank">
               <img src={item.url} height={item.height} alt="logo"
                 style={{ marginBottom: '1rem', filter: item.contrast === "dark" ? 'invert(1)' : '' }}
               />
-            </a>
+            </Link>
           </Grid>
         ))}
       </Grid>
