@@ -1,9 +1,9 @@
 export const agendaShows = [
     {
-        dia: '18',
+        dia: '17',
         mes: 'June',
         local: 'VolksPark Fhain',
-        hora: '(Location in bio)'
+        hora: '2h (Location in bio)'
     },
     {
         dia: '21',
