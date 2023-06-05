@@ -15,15 +15,13 @@ interface VideosProps {
 const Videos: FC<VideosProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    const Videos = styled.div`
+    const Videos = styled.section`
       width: ${pageWidth};
       margin: 0 auto;
   `
 
     return (
         <Videos id="videos">
-
-
             <Typography size='h3' weight='old'>
                 Videos
             </Typography>

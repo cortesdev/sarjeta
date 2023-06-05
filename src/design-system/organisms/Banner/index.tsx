@@ -91,7 +91,14 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-                        <ButtonStyled target="_blank" to="mailto:sambadesarjeta@gmail.com" className='btn btn-lg'>Contate-nos</ButtonStyled>
+
+                        <ButtonStyled
+                            target="_blank"
+                            to="mailto:sambadesarjeta@gmail.com?subject=Contratar Eventos"
+                            className='btn btn-lg'
+                        >
+                            Contate-nos
+                        </ButtonStyled>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.7)}

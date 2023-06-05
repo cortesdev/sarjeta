@@ -19,14 +19,14 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
   border-radius: 20px;
 }
   `
-  const Container = styled.div`
+  const Agenda = styled.section`
       width: ${pageWidth};
       margin: 0 auto;
   `
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Container id="agenda">
+    <Agenda id="agenda">
       <Typography style={{ opacity: isMobile ? '0' : '1' }} size='h3' weight='old'>
         Agenda
       </Typography>
@@ -50,6 +50,9 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
               boxShadow: '2px 72px 42px -30px #940045bf'
             }} />
           }
+
+
+
 
           <Divider orientation="vertical" style={{ borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
 
@@ -94,7 +97,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
         </Stack>
       </motion.div>
 
-    </Container>
+    </Agenda>
   )
 }
 

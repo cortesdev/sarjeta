@@ -15,7 +15,7 @@ interface SobreProps {
 const Sobre: FC<SobreProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    const Sobre = styled.div`
+    const Sobre = styled.section`
       width: ${pageWidth};
       margin: 0 auto;
   `
@@ -34,13 +34,17 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
                 viewport={{ once: true, amount: 0.7 }}
             >
                 <FlexSpacer minHeight={3} />
+
                 <p>
                     O encontro se deu na calçada numa noite quente de verão onde musicos iam se juntando aos poucos a um violão, um pandeiro e algumas vozes, o dia ia amanhecendo e na sarjeta nos tornamos 6 musicos a improvisar musicas brasileiras em berlin, se torando um samba de sarjeta.
                 </p>
                 <br />
+                <br />
                 <p>
-                    Comemoramos juntos 1 ano do grupo em breve e juntos!
+                    Comemoraremos dia 18, 1 ano do Sarjeta!
                 </p>
+
+                <FlexSpacer minHeight={3} />
 
                 <Grid container spacing={4} margin="0 auto">
                     <Grid item xs={12} md={3}>

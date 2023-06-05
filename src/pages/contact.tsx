@@ -13,18 +13,19 @@ interface ContactProps {
 const Contact: FC<ContactProps> = ({ pageWidth }) => {
 
 
-  const Container = styled(Box)`
+  const StyledContact = styled.section`
       width: ${pageWidth};
       padding: 0 3rem;
       background: #e9004c;
-
+      margin-bottom: 2rem;
+      
       @media (max-width: 600px) {
         padding: 0 1.5rem;
       }
   `
 
   return (
-    <Container id="contact" className="footer" mb={4}>
+    <StyledContact id="contact" className="footer" >
       <FlexSpacer minHeight={5} />
 
       <Typography size='h3' weight='old'>
@@ -115,7 +116,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
       <FlexSpacer minHeight={5} />
 
 
-    </Container>
+    </StyledContact>
   )
 }
 
