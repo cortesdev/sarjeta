@@ -12,7 +12,7 @@ interface ParceriasProps {
 
 
 const marcas = [
-  { url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'www.maløca.de' },
+  { url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'http://www.maløca.de' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
@@ -40,7 +40,7 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
       <Grid container alignItems="center" rowSpacing={4}>
         {marcas.map((item) => (
           <Grid item xs={6} md={2} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <a href={item.link} target="_blank" rel="noreferrer">
+            <a href={item.link} target="_blank">
               <img src={item.url} height={item.height} alt="logo"
                 style={{ marginBottom: '1rem', filter: item.contrast === "dark" ? 'invert(1)' : '' }}
               />
