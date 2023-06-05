@@ -1,6 +1,6 @@
 
 // Icons
-import { FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaFacebook, FaTwitch } from 'react-icons/fa';
 // Type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -113,8 +113,16 @@ const Banner = () => {
                                 <FaYoutube style={{ width: 30 }} />
                             </a>
 
-                            <a href='https://www.instagram.com/coletivo.sarjeta/ '>
-                                <FaInstagram />
+                            <a href='https://www.instagram.com/coletivo.sarjeta'>
+                                <FaInstagram style={{ width: 30, }} />
+                            </a>
+
+                            <a href='https://www.facebook.com/sambadesarjeta'>
+                                <FaFacebook style={{ marginLeft: 7 }} />
+                            </a>
+
+                            <a href='https://www.twitch.tv/sambasarjeta'>
+                                <FaTwitch style={{ marginLeft: 12 }} />
                             </a>
                         </Stack>
                     </motion.div>

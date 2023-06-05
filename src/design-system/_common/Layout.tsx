@@ -7,7 +7,6 @@ import Footer from "../organisms/Footer";
 import Hero from "../organisms/Hero";
 import CopyrightFoot from "../molecules/CopyrightFoot";
 import Contact from "../../pages/contact";
-import { FlexSpacer } from "../atoms/FlexSpacer";
 import Parcerias from "../../pages/parcerias";
 
 

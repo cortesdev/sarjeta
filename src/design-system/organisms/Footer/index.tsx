@@ -1,14 +1,12 @@
 import styled from '@emotion/styled'
-import { Link, Box, Grid, List, ListItem, ListItemButton, Stack, useMediaQuery } from '@mui/material'
+import { Link, Grid, List, Stack, useMediaQuery } from '@mui/material'
 import { FC } from 'react'
-import { Copyright } from '../../atoms/Copyright'
 import { FlexSpacer } from '../../atoms/FlexSpacer'
 import FooterLinks from '../../molecules/FooterLinks'
 import { HashLink } from 'react-router-hash-link';
 import { useNavigate } from "react-router-dom";
-import Typography from '../../atoms/Typography'
 import { theme } from '../../../styles/theme'
-import { socialMedia } from '../../../__mock__/socialMedia'
+import { FaFacebook, FaInstagram, FaTwitch, FaYoutube } from 'react-icons/fa'
 
 interface FooterProps {
     pageWidth?: any
@@ -16,8 +14,6 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-    const navigate = useNavigate();
 
     const StyledFooter = styled.footer`       
         maxWidth: ${pageWidth};
@@ -52,14 +48,31 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
 
                             <List style={{ minWidth: '100px', maxWidth: '100%', marginLeft: isMobile ? 'start' : 'auto' }}>
                                 <Stack direction="row">
-                                    {socialMedia.map((item) => (
-                                        <Link
-                                            target="_blank" href={item.url}
-                                            width={{ xs: '10%', md: 'inherit' }}
-                                            sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
-                                            <StyledImage src={item.src} alt={item.alt} />
-                                        </Link>
-                                    ))}
+                                    <Link
+                                        target="_blank" href='https://www.youtube.com/@SambadeSarjeta'
+                                        width={{ xs: '10%', md: 'inherit' }}
+                                        sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
+                                        <FaYoutube />
+                                    </Link>
+                                    <Link
+                                        target="_blank" href='https://www.facebook.com/sambadesarjeta/'
+                                        width={{ xs: '10%', md: 'inherit' }}
+                                        sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
+                                        <FaFacebook />
+                                    </Link>
+                                    <Link
+                                        target="_blank" href='https://www.facebook.com/coletivo.sarjeta'
+                                        width={{ xs: '10%', md: 'inherit' }}
+                                        sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
+                                        <FaInstagram />
+                                    </Link>
+                                    <Link
+                                        target="_blank" href='https://www.twitch.tv/sambasarjeta'
+                                        width={{ xs: '10%', md: 'inherit' }}
+                                        sx={{ padding: '0 0 0 1rem', borderRadious: 50 }}>
+                                        <FaTwitch />
+                                    </Link>
+
                                 </Stack>
                             </List>
                         </Stack>

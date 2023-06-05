@@ -1,15 +1,9 @@
 import styled from '@emotion/styled'
-import { Grid, Link, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import { FC } from 'react'
-// import { musicPlayers } from '../../../__mock__/musicPlayers'
-import { FlexSpacer } from '../../atoms/FlexSpacer'
 import Typography from '../../atoms/Typography'
-import InstagramFeed from 'react-ig-feed'
-
 import 'react-ig-feed/dist/index.css'
-
 import { Suspense } from "react";
-
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Pandeiro from '../../_common/Pandeiro'
@@ -66,7 +60,6 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
               <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '0px 20px 12px #9700398a' }}>
                 Samba </Typography>
-
               <Typography size='h3' weight='old' ml={-2}
                 sx={{ marginBottom: '0', textShadow: '2px 7px 5px #9700398a' }}>
                 de </Typography>
