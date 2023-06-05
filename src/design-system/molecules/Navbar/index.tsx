@@ -3,6 +3,7 @@ import { List, ListItem, Stack } from '@mui/material'
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import Typography from '../../atoms/Typography';
+import { Sound } from '../../atoms/Sound';
 
 
 const StyledListItem = styled(ListItem)`
@@ -55,6 +56,7 @@ const Navbar = () => {
                     </StyledLink>
                 </StyledListItem>
 
+                <Sound />
             </Stack>
         </List>
 
