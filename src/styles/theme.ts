@@ -150,7 +150,7 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#FF0053",
+      main: "#FF005380",
       dark: "#F8407C",
       light: "#F8407C",
     },

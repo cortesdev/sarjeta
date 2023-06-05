@@ -9,8 +9,21 @@ interface HeaderProps {
 
 
 
-const Header: FC<HeaderProps> = ({ pageWidth }) => {
+const StyledHeader = styled.header`
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(20px);
+`;
 
+const StyledContainer = styled(Stack)`
+        margin: 0 auto;
+        padding: 1rem;
+`;
+
+const Header: FC<HeaderProps> = ({ pageWidth }) => {
     const [scroll, setScroll] = useState(false);
 
     useEffect(() => {
@@ -18,18 +31,6 @@ const Header: FC<HeaderProps> = ({ pageWidth }) => {
             setScroll(window.scrollY > 50);
         });
     }, []);
-
-    const StyledHeader = styled.header`
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999;
-    `
-
-    const StyledContainer = styled(Stack)`
-        margin: 0 auto;
-        padding: 1rem;
-    `
 
     return (
         <StyledHeader className={scroll ? "bg-light" : "bg-dark"}        >

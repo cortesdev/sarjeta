@@ -5,9 +5,7 @@ import {
   IconButton,
   Stack,
   Toolbar,
-  useMediaQuery
 } from '@mui/material';
-import { Box } from '@mui/system';
 import React, { FC } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close'
@@ -22,18 +20,21 @@ interface MobileNavProps {
 
 
 const StyledAppBar = styled(AppBar)`
-    position: sticky;
+    position: fixed;
     box-shadow: none;
     border-radius: 0;
     height: 70px;
     top: 0;    
-    z-index: 9999;
+    z-index: 9999;    
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(20px);
 `;
 
 
 
 const MobileNav: FC<MobileNavProps> = () => {
   type Anchor = 'top' | 'left' | 'bottom' | 'right';
+
   const navigate = useNavigate();
 
   const [state, setState] = React.useState(false);
@@ -72,8 +73,6 @@ const MobileNav: FC<MobileNavProps> = () => {
     </div>
   );
 
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
   return (
     <StyledAppBar sx={{ width: '100%' }}>
       <Stack direction="row"
@@ -82,6 +81,7 @@ const MobileNav: FC<MobileNavProps> = () => {
           justifyContent: 'space-between',
           padding: theme.padding.default
         }}>
+
         <div onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
           <img
             style={{ margin: 'auto 0' }}
@@ -100,7 +100,9 @@ const MobileNav: FC<MobileNavProps> = () => {
               :
               <IconButton size="small" onClick={toggleDrawer(anchor, false)}>
                 <CloseIcon />
-              </IconButton>}
+              </IconButton>
+            }
+
             <Drawer
               anchor={anchor}
               open={orientation[anchor]}
