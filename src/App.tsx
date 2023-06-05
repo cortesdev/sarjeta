@@ -43,7 +43,6 @@ const App: FC<AppProps> = () => {
       <ThemeProvider theme={theme}>
         <Router />
         {!data ? <Loader /> : ''}
-
       </ThemeProvider>
     </div>
   );
