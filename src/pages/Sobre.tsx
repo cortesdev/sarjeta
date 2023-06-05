@@ -17,11 +17,11 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
 
     const Sobre = styled.section`
       width: ${pageWidth};
-      margin: 0 auto;
+      margin: 20px auto 0;
   `
 
     return (
-        <Sobre id="discografia">
+        <Sobre id="history">
             <Typography size='h3' weight='old'>
                 História
             </Typography>

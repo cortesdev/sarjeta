@@ -12,12 +12,6 @@ export const agendaShows = [
         hora: '(A confirmar)'
     },
     {
-        dia: '24',
-        mes: 'June',
-        local: 'Park',
-        hora: '2pm'
-    },
-    {
         dia: '',
         mes: '',
         local: '',
