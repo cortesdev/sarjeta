@@ -54,7 +54,7 @@ const Navbar = () => {
                     </StyledLink>
                 </StyledListItem>
 
-                {/* <Sound /> */}
+                <Sound />
             </Stack>
         </List>
 
