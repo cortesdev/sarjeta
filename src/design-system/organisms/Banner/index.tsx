@@ -94,7 +94,8 @@ const Banner = () => {
 
                         <ButtonStyled
                             target="_blank"
-                            to="mailto:sambadesarjeta@gmail.com?subject=Contratar Eventos"
+                            // to="mailto:sambadesarjeta@gmail.com?subject=Contratar Eventos"
+                            to="https://instagram.com/coletivo.sarjeta"
                             className='btn btn-lg'
                         >
                             Contate-nos

@@ -75,7 +75,7 @@ export const Sound: FC = () => {
 
     return (
         <div style={{ alignSelf: 'center' }}>
-            <StyledButton onClick={toggleSound} style={{ border: soundOn ? '2px dotted' : ' solid transparent', background: soundOn ? '#97003910' : 'transparent' }}>
+            <StyledButton onClick={toggleSound} className=" " style={{ border: soundOn ? '2px dotted' : ' solid transparent ', background: '#97003930' }}>
                 {soundOn ? <AiFillSound /> : <AiOutlineSound />}
             </StyledButton>
 

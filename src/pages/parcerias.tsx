@@ -11,12 +11,12 @@ interface ParceriasProps {
 
 
 const marcas = [
-  { url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'http://www.maløca.de' },
-  { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
-  { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
-  { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
-  { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
-  { url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
+  { id: "1", url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'http://www.maløca.de' },
+  { id: "2", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
+  { id: "3", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
+  { id: "4", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
+  { id: "5", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
+  { id: "6", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
 ]
 const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
 
@@ -25,7 +25,7 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
       margin: 0 auto;
       // background: #92033aff;
 
-      & .MuiGrid-item:not(:first-child) {
+      & .MuiGrid-item:not(:first-of-type) {
         opacity: .35;
         filter: saturation(1);
       }      
@@ -38,7 +38,7 @@ const Parcerias: FC<ParceriasProps> = ({ pageWidth }) => {
 
       <Grid container alignItems="center" rowSpacing={4}>
         {marcas.map((item) => (
-          <Grid item xs={6} md={2} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid key={item.id} item xs={6} md={2} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Link href={item.link} target="_blank">
               <img src={item.url} height={item.height} alt="logo"
                 style={{ marginBottom: '1rem', filter: item.contrast === "dark" ? 'invert(1)' : '' }}
