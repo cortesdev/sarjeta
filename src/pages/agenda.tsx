@@ -62,7 +62,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
             <StyledList>
 
               <Typography size="h3" weight='old' mb={3} mt={3}>
-                Proximos eventos
+                Próximos eventos
               </Typography>
 
               {agendaShows.map((item, index) =>
