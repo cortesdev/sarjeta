@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState, useEffect, useRef } from 'react';
 import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
 import ReactSound, { ReactSoundProps } from 'react-sound';
 import styled from '@emotion/styled';
@@ -37,7 +37,9 @@ export const Sound: FC = () => {
     const [isShowingOffMessage, setIsShowingOffMessage] = useState(false);
 
 
+
     useEffect(() => {
+
         if (soundOn) {
             setIsShowingOnMessage(true);
             setIsShowingOffMessage(false);

@@ -1,9 +1,9 @@
 export const agendaShows = [
     {
-        dia: '',
-        mes: 'Em Breve',
-        local: '',
-        hora: ''
+        dia: '26',
+        mes: 'Volkspark Fhain',
+        local: 'instagram bio',
+        hora: '17:00'
     },
     // {
     //     dia: '21',
