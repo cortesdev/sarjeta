@@ -5,6 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Typography from '../../atoms/Typography';
 import { Sound } from '../../atoms/Sound';
 import LanguageSwitcher from '../../atoms/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 
 const StyledListItem = styled(ListItem)`
@@ -19,6 +20,7 @@ const StyledLink = styled(Link)`
     
 `;
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
 
     return (
         <List sx={{ alignSelf: 'center' }}>
@@ -27,7 +29,7 @@ const Navbar = () => {
                 //  sx={{ transform: 'rotate(2deg)' }}
                 >
                     <StyledLink to="#home" smooth>
-                        <Typography size="h4" weight='light'>home</Typography>
+                        <Typography size="h4" weight='light'>{t("nav.home")}</Typography>
                     </StyledLink>
                 </StyledListItem>
 
@@ -36,7 +38,7 @@ const Navbar = () => {
                 // sx={{ transform: 'scale(1.35) rotate(-5deg)' }}
                 >
                     <StyledLink to="#agenda" smooth>
-                        <Typography size="h4" weight='light'>agenda</Typography>
+                        <Typography size="h4" weight='light'>{t("nav.agenda")}</Typography>
                     </StyledLink>
                 </StyledListItem>
 
@@ -44,7 +46,7 @@ const Navbar = () => {
                 // sx={{ transform: 'rotate(3deg)' }}
                 >
                     <StyledLink to="#videos" smooth>
-                        <Typography size="h4" weight='light'>videos</Typography>
+                        <Typography size="h4" weight='light'>{t("nav.video")}</Typography>
                     </StyledLink>
                 </StyledListItem>
 
@@ -52,7 +54,7 @@ const Navbar = () => {
                 // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
                 >
                     <StyledLink to="#contact" smooth>
-                        <Typography size="h4" weight='light'>contato</Typography>
+                        <Typography size="h4" weight='light'>{t("nav.contact")}</Typography>
                     </StyledLink>
                 </StyledListItem>
 

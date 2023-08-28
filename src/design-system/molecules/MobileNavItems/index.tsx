@@ -9,6 +9,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { HashLink as Link } from 'react-router-hash-link';
 import Typography from "../../atoms/Typography";
+import LanguageSwitcher from "../../atoms/LanguageSwitcher";
 
 
 const drawerWidth = '100%';
@@ -125,9 +126,6 @@ export const MobileNavItems: FC = ({ ...props }) => {
           </StyledListItem>
         </Link>
 
-
-
-
         <Link
           to="/#videos"
           style={{
@@ -154,9 +152,9 @@ export const MobileNavItems: FC = ({ ...props }) => {
               <ListItemText primary="Contato" sx={{ fontSize: '14px' }} />
             </div>
           </StyledListItem>
-
         </Link>
 
+        <LanguageSwitcher />
       </StyledList>
     </div>
   );

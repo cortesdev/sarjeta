@@ -7,6 +7,7 @@ import { theme } from '../styles/theme'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/variants';
 import { t } from 'i18next'
+import FormationGalery from '../design-system/_common/formationGallery'
 
 
 interface FormationProps {
@@ -41,6 +42,8 @@ const Formation: FC<FormationProps> = ({ pageWidth }) => {
                 </p>
                 <br />
                 <br />
+
+                <FormationGalery />
 
             </motion.div>
         </Sobre>

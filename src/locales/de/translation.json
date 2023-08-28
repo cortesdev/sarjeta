@@ -5,6 +5,13 @@
     "main": {
         "hero": "Von Brasilien in die Welt, spielen wir brasilianische Musik und teleportieren uns zu ihren Ursprüngen."
     },
+    "nav": {
+        "contact": "Kontakt",
+        "about": "Über",
+        "agenda": "Agenda",
+        "video": "Videos",
+        "home": "Hauptseite"
+    },
     "hero": {
         "welcome": "Willkommen bei",
         "samba": "BurgersteigKante",

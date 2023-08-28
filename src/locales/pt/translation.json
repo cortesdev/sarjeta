@@ -5,6 +5,13 @@
     "main": {
         "hero": "Do Brasil para o mundo, tocamos musica brasileira de teletransporte as origens."
     },
+    "nav": {
+        "contact": "Contato",
+        "about": "Sobre",
+        "agenda": "Agenda",
+        "video": "Videos",
+        "Home": "Home"
+    },
     "hero": {
         "welcome": "Bem-vindo ao",
         "samba": "Samba",

@@ -2,6 +2,13 @@
     "language": "English",
     "code": "EN",
     "loading": "Loading",
+    "nav": {
+        "contact": "Contact",
+        "about": "About",
+        "agenda": "Schedule",
+        "video": "Videos",
+        "Home": "Home"
+    },
     "main": {
         "hero": "From Brazil to the world, we play Brazilian music, teleporting to its origins."
     },
