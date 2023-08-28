@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { Copyright } from '../../atoms/Copyright'
 import Typography from '../../atoms/Typography'
 import { theme } from '../../../styles/theme'
+import { useTranslation } from 'react-i18next'
 
 interface CopyrightFootProps {
     pageWidth?: string
@@ -10,6 +11,7 @@ interface CopyrightFootProps {
 
 const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const { t, i18n } = useTranslation();
 
     return (
         <div style={{
@@ -25,7 +27,7 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
             >
                 <Grid item xs={12} md={6} alignSelf='center'>
                     <Stack direction="row">
-                        <Typography size='small'>Desenvolvedor: Ricardo</Typography>
+                        <Typography size='small'>{t("copyright.dev")}: Ricardo</Typography>
                         <Divider orientation="vertical" style={{ margin: '0 .5rem' }} flexItem />
                         <Typography size='small'><a href="http://cortesdev.de" target="_blank">{' '} CortesDev.de - germany</a></Typography>
                     </Stack>
@@ -35,7 +37,6 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
                     <Copyright />
                 </Grid>
             </Grid>
-
         </div >
     )
 }

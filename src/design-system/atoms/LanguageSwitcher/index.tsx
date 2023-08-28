@@ -25,16 +25,27 @@ function LanguageSwitcher() {
     return (
         <div className="relative">
             <button
-                className="px-4 py-2 bg-transparent text-white border border-white rounded hover:bg-white hover:text-black hover:border-transparent transition duration-300"
+                className="
+                
+                 bg-[#d716566e]
+                p-3
+                width-[60px]
+                rouded-[10px] px-4 py-2 bg-transparent text-white border border-white rounded hover:bg-white hover:text-black hover:border-transparent transition duration-300"
                 onClick={toggleDropdown}
             >
                 {t('language')}
             </button>
             {isOpen && (
-                <ul className="absolute mt-2 py-1 bg-white text-black border border-gray-300 rounded-lg">
+                <ul style={{ width: 100, padding: 10, borderRadius: '10px', background: '#d716566e', cursor: 'pointer' }} className="
+                bg-[#d716566e]
+                p-3
+                width-[60px]
+                rouded-[10px]
+                absolute mt-2 py-1 bg-white text-black border border-gray-300 rounded-lg">
                     {languages.map((language) => (
                         <li
                             key={language.code}
+                            style={{ marginBottom: 5 }}
                             onClick={() => changeLanguage(language.code)}
                             className={`cursor-pointer px-4 py-2 ${language.code === selectedLanguage
                                 ? 'bg-gray-200'

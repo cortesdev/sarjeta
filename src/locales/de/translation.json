@@ -1,6 +1,7 @@
 {
     "language": "German",
     "code": "DE",
+    "loading": "Wird geladen",
     "main": {
         "hero": "Von Brasilien in die Welt, spielen wir brasilianische Musik und teleportieren uns zu ihren Ursprüngen."
     },
@@ -21,7 +22,30 @@
         "text": ""
     },
     "contact": {
-        "title": "Kontakt",
-        "text": ""
+        "about": "Mehr Über uns",
+        "formation": "integrants"
+    },
+    "footer": {
+        "title": "Links",
+        "social": "Social",
+        "about": "Über uns",
+        "formation": "Formation",
+        "home": "Heim",
+        "schedule": "Zeitplan",
+        "videos": "Videos",
+        "contact": "Kontakt",
+        "learn_more": "mehr wissen",
+        "location": "Standort",
+        "location_city": "Berlin",
+        "contact_for_shows": "Kontakt für Shows",
+        "phone_number": "+49 157 56565257",
+        "training": "Ausbildung",
+        "members": "Mitglieder",
+        "members_list": "Eryka (Sänger), Bernardo (Sänger), Julien (Gitarre), Guilherme (Gitarre 2), Avelino (Cavaquinho), Ricardo (Schlagzeug), Marcos (Schlagzeug), Fernando (Schlagzeug), David (Saxofon), Suzi (Flöte 1 ) ), Manoela (Flöte 2) Shiche (Posaune)."
+    },
+    "copyright": {
+        "text": "Alle Rechte vorbehalten",
+        "collective": "Kolektiv",
+        "dev": "Entwickler"
     }
 }

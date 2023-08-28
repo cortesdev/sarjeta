@@ -7,6 +7,7 @@ import Videos from './videos'
 import Sobre from './Sobre'
 import { useMediaQuery } from '@mui/material';
 import { theme } from '../styles/theme';
+import Formation from './Formation'
 
 
 
@@ -30,6 +31,8 @@ const Home: FC<HomeProps> = ({ pageWidth }) => {
         {/* <Singles /> */}
         <FlexSpacer minHeight={isMobile ? 8 : 5} />
         <Sobre />
+        <FlexSpacer minHeight={5} />
+        <Formation />
         <FlexSpacer minHeight={5} />
         <Agenda />
         <FlexSpacer minHeight={5} />

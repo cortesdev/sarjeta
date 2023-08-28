@@ -3,6 +3,7 @@ import { Stack } from '@mui/material';
 import { FC } from 'react';
 import { FlexSpacer } from '../atoms/FlexSpacer';
 import Typography from '../atoms/Typography';
+import { useTranslation } from 'react-i18next';
 
 const DivLoading = styled(Stack)`
 
@@ -35,6 +36,7 @@ const OneLine = styled(Stack)`
 
 export const Loader: FC = ({ ...props }) => {
     console.log("Loader");
+    const { t, i18n } = useTranslation();
 
     return (
         <DivLoading direction="column" className='loader'>
@@ -44,7 +46,7 @@ export const Loader: FC = ({ ...props }) => {
                 <CenterTitle>
                     <OneLine>
                         <Typography size='16px'>
-                            Carregando
+                            {t("loading")}
                             <FlexSpacer minWidth={1} />
                             <img src="/images/loader.gif" alt="sarjeta loader" width={20} height={20} style={{}} />
                         </Typography>

@@ -7,6 +7,8 @@ import { HashLink } from 'react-router-hash-link';
 import { useNavigate } from "react-router-dom";
 import { theme } from '../../../styles/theme'
 import { FaFacebook, FaInstagram, FaTwitch, FaYoutube } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next';
+import { Typography } from '../../atoms/Typography'
 
 interface FooterProps {
     pageWidth?: any
@@ -31,6 +33,7 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
     height: 30px;
     padding: 4px;
     `
+    const { t, i18n } = useTranslation();
 
     return (
         <StyledFooter className="footer"
@@ -44,7 +47,8 @@ const Footer: FC<FooterProps> = ({ pageWidth }) => {
                     </Grid>
 
                     <Grid item xs={12} md={3}>
-                        <Stack direction="column" justifyContent="space-between" >
+                        <Stack className="text-right" direction="column" justifyContent="space-between" >
+                            <Typography size="h3" weight='old' style={{ alignSelf: "self-end" }}>{t("footer.social")}</Typography>
 
                             <List style={{ minWidth: '100px', maxWidth: '100%', marginLeft: isMobile ? 'start' : 'auto' }}>
                                 <Stack direction="row">

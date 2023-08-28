@@ -1,6 +1,7 @@
 {
     "language": "Português",
     "code": "PT",
+    "loading": "Carregando",
     "main": {
         "hero": "Do Brasil para o mundo, tocamos musica brasileira de teletransporte as origens."
     },
@@ -23,5 +24,28 @@
     "contact": {
         "title": "Contato",
         "text": "Contato para shows"
+    },
+    "footer": {
+        "title": "Links",
+        "about": "Sobre",
+        "social": "Social",
+        "formation": "Formação",
+        "home": "Página Inicial",
+        "schedule": "Schedule",
+        "videos": "Vídeos",
+        "contact": "Contato",
+        "learn_more": "Saiba Mais",
+        "location": "Localização",
+        "location_city": "Berlim",
+        "contact_for_shows": "Contato para Shows",
+        "phone_number": "+49 157 56565257",
+        "training": "Treinamento",
+        "members": "Membros",
+        "members_list": "Eryka (Cantora), Bernardo (Cantor), Julien (Violão),Guilherme (Violão 2), Avelino (Cavaquinho), Ricardo (Percurssão), Marcos (Percurssão), Fernando (Percurssão), David (Sax), Suzi (flauta 1),  Manoela (flauta 2) Shiche (Trombone)."
+    },
+    "copyright": {
+        "text": "Todos os direitos Reservados",
+        "collective": "coletivo",
+        "dev": "Desenvolvedor"
     }
 }
