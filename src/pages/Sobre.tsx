@@ -6,6 +6,7 @@ import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
 import { theme } from '../styles/theme'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/variants';
+import { t } from 'i18next'
 
 
 interface SobreProps {
@@ -23,7 +24,7 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
     return (
         <Sobre id="history">
             <Typography size='h3' weight='old'>
-                História
+                {t("history.title")}
             </Typography>
 
 
@@ -36,13 +37,11 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
                 <FlexSpacer minHeight={3} />
 
                 <p>
-                    O encontro se deu na calçada numa noite quente de verão onde musicos iam se juntando aos poucos a um violão, um pandeiro e algumas vozes, o dia ia amanhecendo e na sarjeta nos tornamos 6 musicos a improvisar musicas brasileiras em berlin, se torando um samba de sarjeta.
+                    {t("history.text")}
                 </p>
                 <br />
                 <br />
-                <p>
-                    Comemoraremos dia 18, 1 ano do Sarjeta!
-                </p>
+
 
                 <FlexSpacer minHeight={3} />
 

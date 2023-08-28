@@ -8,6 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Pandeiro from '../../_common/Pandeiro'
 import Banner from '../Banner'
+import { useTranslation } from 'react-i18next'
 
 
 interface HeroProps {
@@ -44,33 +45,34 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
       margin: 0 1.5rem;
     }
   `
+  const { t, i18n } = useTranslation();
 
   return (
     <Container direction={isMobile ? 'column' : 'row'} id="Hero">
       <HeroImage />
 
       <HeroCenter justifyContent="space-between" sx={{ maxWidth: '100%', display: 'flex', height: '89vh' }}>
-        <Stack direction="column" marginTop={{ xs: '0', md: "200px" }} width={{ xs: '100%' }} mb="5%" ml={"8%"} color="white" zIndex={999}>
+        <Stack direction="column" marginTop={{ xs: '0', md: "200px" }} width={{ xs: '100%' }} mb="5%" ml={"5%"} color="white" zIndex={999}>
 
           {!isMobile ? <>
             <div>
 
-              <Typography size='h3' weight='light' mb={5}>Bem-vindx ao</Typography>
+              <Typography size='h3' weight='light' mb={5}>{t('hero.welcome')}</Typography>
 
               <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '0px 20px 12px #9700398a' }}>
-                Samba </Typography>
+                {t('hero.samba')}</Typography>
               <Typography size='h3' weight='old' ml={-2}
                 sx={{ marginBottom: '0', textShadow: '2px 7px 5px #9700398a' }}>
-                de </Typography>
+                {t('hero.de')}</Typography>
               <Typography size='h2' weight='old'
                 sx={{ marginBottom: '0', textShadow: '0px 30px 12px #9700398a' }}>
-                Sarjeta</Typography>
+                {t('hero.sarjeta')}</Typography>
             </div>
           </>
             : <>
-              <Typography size='h3' weight='light' mb={5} mt={5}>Bem-vindx ao</Typography>
-              <Typography size='h2' weight='old'>Samba <br />  de sarjeta</Typography>
+              <Typography size='h3' weight='light' mb={5} mt={5}>{t('hero.welcome')}</Typography>
+              <Typography size='h2' weight='old'>{t('hero.samba_de_sarjeta')}</Typography>
             </>
           }
 

@@ -1,0 +1,27 @@
+{
+    "language": "English",
+    "code": "EN",
+    "main": {
+        "hero": "From Brazil to the world, we play Brazilian music, teleporting to its origins."
+    },
+    "hero": {
+        "welcome": "Welcome to",
+        "samba": "Sidewalk",
+        "de": " ",
+        "sarjeta": "Samba",
+        "samba_de_sarjeta": "Samba de Sarjeta",
+        "we": "We play "
+    },
+    "history": {
+        "title": "History",
+        "text": "The encounter took place on the sidewalk on a hot summer night, where musicians gradually gathered around a guitar, a tambourine, and some voices. The day was dawning, and in the gutter, we became six musicians improvising Brazilian music in Berlin, turning it into a sidewalk samba."
+    },
+    "events": {
+        "title": "Next Events",
+        "text": ""
+    },
+    "contact": {
+        "title": "Contact",
+        "text": ""
+    }
+}

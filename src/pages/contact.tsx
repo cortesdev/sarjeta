@@ -4,6 +4,7 @@ import { Box } from '@mui/system'
 import React, { FC } from 'react'
 import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
 import Typography from '../design-system/atoms/Typography'
+import { useTranslation } from 'react-i18next'
 
 
 interface ContactProps {
@@ -11,6 +12,7 @@ interface ContactProps {
 }
 
 const Contact: FC<ContactProps> = ({ pageWidth }) => {
+  const { t, i18n } = useTranslation();
 
 
   const StyledContact = styled.section`
@@ -29,7 +31,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
       <FlexSpacer minHeight={5} />
 
       <Typography size='h3' weight='old'>
-        Contato
+        {t("contact.title")}
       </Typography>
 
       <FlexSpacer minHeight={3} />
@@ -38,7 +40,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
         <Grid item xs={12} md={4}>
 
           <Typography size='h4' weight='old'>
-            Contato para shows
+            {t("contact.text")}
           </Typography>
 
 

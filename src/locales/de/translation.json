@@ -1,0 +1,27 @@
+{
+    "language": "German",
+    "code": "DE",
+    "main": {
+        "hero": "Von Brasilien in die Welt, spielen wir brasilianische Musik und teleportieren uns zu ihren Ursprüngen."
+    },
+    "hero": {
+        "welcome": "Willkommen bei",
+        "samba": "BurgersteigKante",
+        "de": "",
+        "sarjeta": "Samba",
+        "samba_de_sarjeta": "Samba von Sarjeta",
+        "we": "Wir Spielen "
+    },
+    "history": {
+        "title": "History",
+        "text": "Das Treffen fand an einem warmen Sommerabend auf dem Bürgersteig statt, wo Musiker nach und nach um eine Gitarre, eine Trommel und einige Stimmen versammelten. Der Tag brach an, und auf dem Gehweg wurden wir zu sechs Musikern, die brasilianische Musik in Berlin improvisierten, und es wurde zu einem Burgersteigkante Samba."
+    },
+    "events": {
+        "title": "Nächste Veranstaltungen",
+        "text": ""
+    },
+    "contact": {
+        "title": "Kontakt",
+        "text": ""
+    }
+}

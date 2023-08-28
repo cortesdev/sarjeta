@@ -4,6 +4,7 @@ import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import Typography from '../../atoms/Typography';
 import { Sound } from '../../atoms/Sound';
+import LanguageSwitcher from '../../atoms/LanguageSwitcher';
 
 
 const StyledListItem = styled(ListItem)`
@@ -46,6 +47,7 @@ const Navbar = () => {
                         <Typography size="h4" weight='light'>videos</Typography>
                     </StyledLink>
                 </StyledListItem>
+
                 <StyledListItem
                 // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
                 >
@@ -54,6 +56,12 @@ const Navbar = () => {
                     </StyledLink>
                 </StyledListItem>
 
+
+                <StyledListItem
+                // sx={{ transform: 'scale(1.5) rotate(-3.5deg)' }}
+                >
+                    <LanguageSwitcher />
+                </StyledListItem>
                 <Sound />
             </Stack>
         </List>

@@ -7,6 +7,7 @@ import { theme } from '../styles/theme'
 import { agendaShows } from '../__mock__/agendaShows'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/variants';
+import { useTranslation } from 'react-i18next'
 
 interface AgendaProps {
   pageWidth?: any
@@ -24,6 +25,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
       margin: 0 auto;
   `
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const { t, i18n } = useTranslation();
 
   return (
     <Agenda id="agenda">
@@ -51,9 +53,6 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
             }} />
           }
 
-
-
-
           <Divider orientation="vertical" style={{ borderColor: "rgba(255, 255, 255, .2)" }} flexItem />
 
           <Stack direction="column" width={{ xs: '100%', md: '41%' }}>
@@ -62,7 +61,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
             <StyledList>
 
               <Typography size="h3" weight='old' mb={3} mt={3}>
-                Próximos eventos
+                {t("events.title")}
               </Typography>
 
               {agendaShows.map((item, index) =>

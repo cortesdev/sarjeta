@@ -12,11 +12,11 @@ import { Stack } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
 import { theme } from '../../../styles/theme';
+import { useTranslation } from 'react-i18next';
 
 
 
 const ButtonStyled = styled(Link)`
- 
     background-image:  linear-gradient(to right, #00ef8c 0%, #01d4ce  51%, #00e151  100%);
     margin: 20px 0;
     padding: 15px 45px;
@@ -38,6 +38,7 @@ const ButtonStyled = styled(Link)`
 `;
 
 const Banner = () => {
+    const { t, i18n } = useTranslation();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return (<section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -54,7 +55,7 @@ const Banner = () => {
           font-semibold uppercase leading-[-1]'>
                         <div style={{ fontSize: 32, fontWeight: 'bold' }}>
 
-                            <span style={{ marginBottom: 35 }}>Nós tocamos </span>
+                            <span style={{ marginBottom: 35 }}>{t("hero.we")} </span>
                             <TypeAnimation
                                 sequence={[
                                     'Samba',
@@ -83,7 +84,7 @@ const Banner = () => {
                         className='mb-8 max-w-lg mx-auto lg:mx-0'
                         style={{ width: isMobile ? '90%' : '440px' }}
                     >
-                        Do Brasil para o mundo, tocamos musica brasileira de teletransporte as origens.
+                        {t('main.hero')}
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
