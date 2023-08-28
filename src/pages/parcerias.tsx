@@ -11,7 +11,7 @@ interface ParceriasProps {
 
 
 const marcas = [
-  { id: "1", url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'http://www.maløca.de' },
+  { id: "1", url: '/images/SVG/maloca.svg', height: '20px', nome: '', contrast: '', link: 'http://www.maloca.art' },
   { id: "2", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { id: "3", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
   { id: "4", url: '/images/SVG/logo-vert.svg', height: '30px', nome: '', contrast: '', link: '' },
