@@ -46,7 +46,7 @@ const Sobre: FC<SobreProps> = ({ pageWidth }) => {
                 <FlexSpacer minHeight={3} />
 
                 <Grid container spacing={4} margin="0 auto">
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={12} md={3} pl="0">
                         <img src="https://github.com/cortesdev/sarjeta/blob/main/public/images/Capa1.png?raw=true" className="boxShadow" alt="capa" width="95%" style={{ borderRadius: 20 }} />
                     </Grid>
                     <Grid item xs={12} md={3}>

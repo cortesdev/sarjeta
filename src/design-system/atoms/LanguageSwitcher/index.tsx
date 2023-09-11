@@ -38,6 +38,7 @@ function LanguageSwitcher() {
             {isOpen && (
                 <ul style={{ width: 100, padding: 10, borderRadius: '10px', background: '#d716566e', cursor: 'pointer' }} className="
                 bg-[#d716566e]
+                text-white
                 p-3
                 width-[60px]
                 rouded-[10px]
@@ -48,7 +49,7 @@ function LanguageSwitcher() {
                             style={{ marginBottom: 5 }}
                             onClick={() => changeLanguage(language.code)}
                             className={`cursor-pointer px-4 py-2 ${language.code === selectedLanguage
-                                ? 'bg-gray-200'
+                                ? 'bg-gray-200 text-black rounded-md'
                                 : ''
                                 }`}
                         >
