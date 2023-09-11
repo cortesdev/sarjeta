@@ -52,7 +52,7 @@ const App: FC<AppProps> = () => {
     <Suspense fallback="...loading">
       <I18nextProvider i18n={i18n}>
 
-        <div className="App container">
+        <div className="App ">
           <ThemeProvider theme={theme}>
             <Router />
             {!data ? <Loader /> : ''}

@@ -48,7 +48,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <Container direction={isMobile ? 'column' : 'row'} id="Hero">
+    <Container className="min-h-[880px]" direction={isMobile ? 'column' : 'row'} id="Hero">
       <HeroImage />
 
       <HeroCenter justifyContent="space-between" sx={{ maxWidth: '100%', display: 'flex', height: '89vh' }}>

@@ -11,13 +11,13 @@ export const Router: FC = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     const [open, setOpen] = useState(false)
-    const maxWidth = '1048px';
+    const maxWidth = '90%';
 
     return (
         <BrowserRouter>
             <ScrollToTop />
 
-            <main id='home'>
+            <main id='home ' className="w-[100%]">
                 <Layout
                     open={open}
                     setOpen={setOpen}
