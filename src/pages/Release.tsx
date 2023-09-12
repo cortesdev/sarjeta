@@ -68,7 +68,7 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
 
             </motion.div>
 
-            <div className="md:flex gap-4 mb-4 rounded-xl-t-r overflow-hidden">
+            <div className="md:flex gap-10 mb-4 rounded-xl-t-r overflow-hidden">
                 <div className="w-full flex flex-col mb-10 md:mb-0">
                     <img className="max-h-[256px]  rounded-tl-xl rounded-tr-xl overflow-hidden" src="https://cdn.sanity.io/files/i5epcvu6/production/a1fb727c9f905aab49a67a24d1304c3aa85f3b7f.png" alt="techrider" />
                     <div className="flex flex-col bg-[#00000020]">
