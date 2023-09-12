@@ -114,7 +114,6 @@ export const Form = ({ title, content }) => {
                     type="submit"
                 />
 
-                {state === "Error" && <div className="error-state">{errorMsg}</div>}
                 {messageSent && (
                     <div className="text-center md:text-right py-3 opacity-[.80]">Awesome, thanks for subscribing!</div>
                 )}
