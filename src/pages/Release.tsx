@@ -70,7 +70,7 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
 
             <div className="md:flex gap-4 mb-4 rounded-xl-t-r overflow-hidden">
                 <div className="w-full flex flex-col mb-10 md:mb-0">
-                    <img className="max-h-[256px]" src="https://cdn.sanity.io/files/i5epcvu6/production/a1fb727c9f905aab49a67a24d1304c3aa85f3b7f.png" alt="techrider" />
+                    <img className="max-h-[256px]  rounded-tl-xl rounded-tr-xl overflow-hidden" src="https://cdn.sanity.io/files/i5epcvu6/production/a1fb727c9f905aab49a67a24d1304c3aa85f3b7f.png" alt="techrider" />
                     <div className="flex flex-col bg-[#00000020]">
 
                         <h3 className="text-2xl  pt-10 text-center">
@@ -86,7 +86,7 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
                 </div>
                 <div className="w-full flex flex-col mb-10 md:mb-0">
                     <img
-                        className="max-h-[256px]"
+                        className="max-h-[256px] rounded-tl-xl rounded-tr-xl overflow-hidden"
                         src="https://cdn.sanity.io/files/i5epcvu6/production/870f8010e028b537681063be6b304d94f7475a71.png"
                         alt="band"
                     />
@@ -108,7 +108,7 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
                     </div>
                 </div>
                 <div className="w-full flex flex-col mb-10 md:mb-0">
-                    <img className="max-h-[256px]" src="https://cdn.sanity.io/files/i5epcvu6/production/c1ccb3646952d4524bceb49b2103830ca994a4e2.png" alt="release" />
+                    <img className="max-h-[256px]  rounded-tl-xl rounded-tr-xl overflow-hidden" src="https://cdn.sanity.io/files/i5epcvu6/production/c1ccb3646952d4524bceb49b2103830ca994a4e2.png" alt="release" />
 
                     <div className="flex flex-col bg-[#00000020]">
 
