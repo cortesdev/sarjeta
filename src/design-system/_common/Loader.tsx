@@ -36,7 +36,7 @@ const OneLine = styled(Stack)`
 
 export const Loader: FC = ({ ...props }) => {
     console.log("Loader");
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <DivLoading direction="column" className='loader'>

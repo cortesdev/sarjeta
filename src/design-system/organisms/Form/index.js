@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 export const Form = ({ title, content }) => {
     const form = useRef();
@@ -9,6 +10,7 @@ export const Form = ({ title, content }) => {
     const [state, setState] = useState("idle");
     const [errorMsg, setErrorMsg] = useState(null);
     const [messageSent, setMessageSent] = useState(false);
+    const { t } = useTranslation();
 
     const subscribe = async () => {
         try {
@@ -81,7 +83,7 @@ export const Form = ({ title, content }) => {
                 className='shadow-md rounded px-8 pt-6 pb-8 md:w-full p-6 text-3xl'
             >
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
-                    Name
+                    {t('form.name')}
                 </label>
                 <input
                     className='text-white text-lg p-2 w-full bg-[#ff5369] border border-[#ff5379]'
@@ -90,7 +92,7 @@ export const Form = ({ title, content }) => {
                 />
 
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
-                    Email
+                    {t('form.email')}
                 </label>
                 <input
                     className='text-white p-2 w-full text-lg bg-[#ff5369] border border-[#ff5379]'
@@ -101,7 +103,7 @@ export const Form = ({ title, content }) => {
                 />
 
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
-                    Message
+                    {t('form.message')}
                 </label>
                 <textarea
                     name="message"
@@ -115,7 +117,7 @@ export const Form = ({ title, content }) => {
                 />
 
                 {messageSent && (
-                    <div className="text-center md:text-right py-3 opacity-[.80]">Awesome, thanks for subscribing!</div>
+                    <div className="text-center md:text-right py-3 opacity-[.80]">{t('form.thanks')}</div>
                 )}
             </form>
         </div>

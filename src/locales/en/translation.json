@@ -66,5 +66,12 @@
         "text": "All rights reserved",
         "collective": "Collective",
         "dev": "Developer"
+    },
+    "form": {
+        "name": "Name",
+        "mail": "E-mail",
+        "message": "Message",
+        "send": "Name",
+        "thanks": "Thank you for your message!"
     }
 }
