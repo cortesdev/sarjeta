@@ -16,18 +16,18 @@ interface AppProps {
   locale?: string
 }
 
-const locales = {
-  en: { title: 'English' },
-  de: { title: 'German' },
-  pt: { title: 'Portuguese' },
-};
+// const locales = {
+//   pt: { title: 'Portuguese' },
+//   en: { title: 'English' },
+//   de: { title: 'German' },
+// };
 
 const App: FC<AppProps> = () => {
 
   const [data, setData] = useState(false);
   const { t, i18n } = useTranslation();
 
-  const [messages, setMessages] = useState(0);
+  // const [messages, setMessages] = useState(0);
 
   const setDataTimeout = () => {
     setTimeout(() => {
@@ -51,7 +51,6 @@ const App: FC<AppProps> = () => {
   return (
     <Suspense fallback="...loading">
       <I18nextProvider i18n={i18n}>
-
         <div className="App ">
           <ThemeProvider theme={theme}>
             <Router />
