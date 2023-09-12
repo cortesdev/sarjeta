@@ -34,7 +34,14 @@
     },
     "release": {
         "title": "Press Kit",
-        "text": "Samba de Sarjeta carries a profound significance for the people of Brazil, extending beyond a mere gathering of Sambistas. It embodies a vibrant way of life that shapes the daily existence of countless Brazilians. Musicians spanning generations, devoted Samba aficionados, and cherished friends unite in a laid-back ambiance, immersing themselves in the rhythmic world of Samba until the early hours, all while relishing refreshing beverages.    \n    In Berlin, diverse collectives consistently infuse this slice of Brazilian culture into the city's soul, igniting a passionate fire reminiscent of Brazil's vibrant spirit."
+        "text": "Samba de Sarjeta hat für die Menschen in Brasilien eine tiefgreifende Bedeutung, die über eine bloße Zusammenkunft von Samba-Musikern hinausgeht. Es verkörpert eine lebendige Lebensart, die den Alltag unzähliger Brasilianer im Ausland prägt. Musiker verschiedener Generationen, begeisterte Samba-Fans und geschätzte Freunde treffen sich in entspannter Atmosphäre und tauchen vom Vorabend bis in die frühen Morgenstunden in die rhythmische Samba-Welt ein, während sie traditionelle brasilianische Musik genießen.In Berlin tragen verschiedene Kollektive dieses Stück brasilianischer Kultur immer wieder in die Seele der Stadt ein und entfachen so ein leidenschaftliches Feuer, das an den lebendigen Geist Brasiliens erinnert.",
+        "title1": "Technischer Fahrplan",
+        "title2": "Pressefoto",
+        "title3": "Pressemitteilung",
+        "box1": "Eingabekarte und Bühnenplan",
+        "box2": "Bandfotos in 300 dpi",
+        "box3": "Bandbiografie (pdf)",
+        "download": "Heruntaladen"
     },
     "footer": {
         "title": "Links",

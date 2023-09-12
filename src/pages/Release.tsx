@@ -74,13 +74,15 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
                     <div className="flex flex-col bg-[#00000020]">
 
                         <h3 className="text-2xl  pt-10 text-center">
-                            Technical Rider
+                            {t("release.title1")}
                         </h3>
 
                         <p className='py-4 px-4'>
-                            Input List and Stage map (pdf)
+                            {t("release.box1")}
                         </p>
-                        <a className="block w-100 text-white hover:text-white bg-[#00000020] text-center p-3" rel="noreferrer" target="_blank" href={techRider} download> Download File</a>
+                        <a className="block w-100 text-white hover:text-white bg-[#00000020] text-center p-3" rel="noreferrer" target="_blank" href={techRider} download>
+                            {t("release.download")}
+                        </a>
 
                     </div>
                 </div>
@@ -93,35 +95,35 @@ const Formation: FC<ReleaseProps> = ({ pageWidth }) => {
                     <div className="flex flex-col bg-[#00000020]">
 
                         <h3 className="text-2xl  pt-10 text-center">
-                            Press Fotos
+                            {t("release.title2")}
                         </h3>
 
                         <p className='py-4 px-4'>
-                            Band Fotos in 300dpi (png)
+
+                            {t("release.box2")}
                         </p>
 
                         <a className="block w-100 text-white hover:text-white bg-[#00000020] text-center p-3"
                             rel="noreferrer" target="_blank" href={pressPhotos} download>
-                            Download File
+                            {t("release.download")}
                         </a>
-
                     </div>
                 </div>
                 <div className="w-full flex flex-col mb-10 md:mb-0">
                     <img className="max-h-[256px]  rounded-tl-xl rounded-tr-xl overflow-hidden" src="https://cdn.sanity.io/files/i5epcvu6/production/c1ccb3646952d4524bceb49b2103830ca994a4e2.png" alt="release" />
 
                     <div className="flex flex-col bg-[#00000020]">
-
                         <h3 className="text-2xl  pt-10 text-center">
-                            Press Release
+                            {t("release.title3")}
                         </h3>
 
                         <p className='py-4 px-4'>
-                            Band Biography (pdf)</p>
+                            {t("release.box3")}
+                        </p>
 
                         <a className="block w-100 text-white hover:text-white bg-[#00000020] text-center p-3"
                             rel="noreferrer" target="_blank" href={pressRelease} download>
-                            Download File
+                            {t("release.download")}
                         </a>
                     </div>
                 </div>

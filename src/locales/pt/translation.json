@@ -34,7 +34,14 @@
     },
     "release": {
         "title": "Press Kit",
-        "text": "Samba de Sarjeta carries a profound significance for the people of Brazil, extending beyond a mere gathering of Sambistas. It embodies a vibrant way of life that shapes the daily existence of countless Brazilians. Musicians spanning generations, devoted Samba aficionados, and cherished friends unite in a laid-back ambiance, immersing themselves in the rhythmic world of Samba until the early hours, all while relishing refreshing beverages.    \n    In Berlin, diverse collectives consistently infuse this slice of Brazilian culture into the city's soul, igniting a passionate fire reminiscent of Brazil's vibrant spirit."
+        "text": "O Samba de Sarjeta carrega um significado profundo para o povo brasileiro, que vai além de uma mera reunião de sambistas. Incorpora um modo de vida vibrante que molda o cotidiano de inúmeros brasileiros no exterior. Músicos de gerações, aficionados devotos do Samba e amigos queridos se unem em um ambiente descontraído, mergulhando no mundo rítmico do Samba desde a madrugada até de madrugada, enquanto saboreiam a herança musical brasileira. Em Berlim, diversos coletivos infundem consistentemente esta fatia da cultura brasileira na alma da cidade, acendendo um fogo apaixonado que lembra o espírito vibrante do Brasil.",
+        "title1": "Rider Técnico",
+        "title2": "Foto de Imprensa",
+        "title3": "Comunicado de Imprensa",
+        "box1": "Lista de Entrada e Mapa de Palco",
+        "box2": "Fotos da Banda em 300 dpi",
+        "box3": "Biografia da Banda (pdf)",
+        "download": "Baixar arquivo"
     },
     "footer": {
         "title": "Links",
