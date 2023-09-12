@@ -52,7 +52,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
       <HeroImage />
 
       <HeroCenter justifyContent="space-between" sx={{ maxWidth: '100%', display: 'flex', height: '89vh' }}>
-        <Stack direction="column" marginTop={{ xs: '0', md: "200px" }} width={{ xs: '100%' }} mb="5%" ml={"5%"} color="white" zIndex={999}>
+        <Stack direction="column" className="md:ml-[90px]" marginTop={{ xs: '0', md: "200px" }} width={{ xs: '100%' }} mb="5%" color="white" zIndex={999}>
 
           {!isMobile ? <>
             <div>
@@ -70,10 +70,7 @@ const Hero: FC<HeroProps> = ({ pageWidth, isMobile }) => {
                 {t('hero.sarjeta')}</Typography>
             </div>
           </>
-            : <>
-              <Typography size='h3' weight='light' mb={5} mt={5}>{t('hero.welcome')}</Typography>
-              <Typography size='h2' weight='old'>{t('hero.samba_de_sarjeta')}</Typography>
-            </>
+            : ""
           }
 
           <Banner />

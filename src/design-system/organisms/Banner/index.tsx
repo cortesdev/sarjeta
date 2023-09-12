@@ -13,6 +13,7 @@ import { useMediaQuery } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
 import { theme } from '../../../styles/theme';
 import { useTranslation } from 'react-i18next';
+import Typography from '../../atoms/Typography';
 
 
 
@@ -38,14 +39,17 @@ const ButtonStyled = styled(Link)`
 `;
 
 const Banner = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-    return (<section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
-        <div style={{ margin: '60px auto 0', height: 230 }}>
-            <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
-                {/* text */}
-                <div className='flex-1 text-center font-secondary lg:text-left'>
+    return (<section className='md:mt-[0] mt-[200px] md:min-h-[78vh] flex items-center' id='home'>
+        <div className=' md:h-[230px] mt-[-100px] md:mt-[0]'>
+            <div className='flex flex-col lg:flex-row lg:items-center lg:gap-x-12'>
+                {!isMobile ? "" : <div className='mb-10'>
+                    <Typography size='h3' weight='light' mb={5} mt={5}>{t('hero.welcome')}</Typography>
+                    <Typography size='h2' weight='old'>{t('hero.samba_de_sarjeta')}</Typography>
+                </div>}
+                <div className='flex-1 text-center font-secondary lg:text-left m-[-160px auto 0] md:m-[60px auto 0]'>
                     <motion.div
                         variants={fadeIn('up', 0.4)}
                         initial={isMobile ? 'visible' : 'hidden'}

@@ -92,7 +92,7 @@ export const Form = ({ title, content }) => {
                 />
 
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
-                    {t('form.email')}
+                    {t('form.mail')}
                 </label>
                 <input
                     className='text-white p-2 w-full text-lg bg-[#ff5369] border border-[#ff5379]'
