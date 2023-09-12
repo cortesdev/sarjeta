@@ -25,7 +25,6 @@ export const Form = ({ title, content }) => {
             }
         } catch (error) {
             console.error(error);
-            setErrorMsg("Please type a valid email.");
             setState("Error");
         }
     };
@@ -117,7 +116,7 @@ export const Form = ({ title, content }) => {
 
                 {state === "Error" && <div className="error-state">{errorMsg}</div>}
                 {messageSent && (
-                    <div className="text-center md:text-right py-3 opacity-[.50]">Awesome, thanks for subscribing!</div>
+                    <div className="text-center md:text-right py-3 opacity-[.80]">Awesome, thanks for subscribing!</div>
                 )}
             </form>
         </div>
