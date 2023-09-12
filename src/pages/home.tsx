@@ -9,6 +9,7 @@ import { useMediaQuery } from '@mui/material';
 import { theme } from '../styles/theme';
 import Release from './Release'
 import Formation from './Formation'
+import { Form } from 'react-router-dom'
 
 
 
@@ -39,6 +40,7 @@ const Home: FC<HomeProps> = ({ pageWidth }) => {
 
         <Formation />
         <FlexSpacer minHeight={5} />
+
 
         <Agenda />
         <FlexSpacer minHeight={5} />

@@ -25,7 +25,9 @@
   },
   "include": [
     "src/**/*.ts*",
-    "services"
+    "services",
+    "src/pages/api/subscribe.js",
+    "src/design-system/organisms/Form/index.js"
   ],
   "exclude": [
     "node_modules",

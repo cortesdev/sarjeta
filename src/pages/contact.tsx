@@ -5,6 +5,7 @@ import React, { FC } from 'react'
 import { FlexSpacer } from '../design-system/atoms/FlexSpacer'
 import Typography from '../design-system/atoms/Typography'
 import { useTranslation } from 'react-i18next'
+import { Form } from '../design-system/organisms/Form'
 
 
 interface ContactProps {
@@ -36,8 +37,10 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
 
       <FlexSpacer minHeight={3} />
 
-      <Grid container rowSpacing={3}  >
-        <Grid item xs={12} md={4}>
+      <div className="md:flex flex-row">
+
+
+        <div className="w-[50%]">
 
           <Typography size='h4' weight='old'>
             {t("contact.text")}
@@ -81,9 +84,14 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
             +49 157 56565257
           </Typography>
           <FlexSpacer minHeight={1} />
-        </Grid>
+
+        </div>
+        <div className="w-[50%]">
+          <Form title={``} content={` `} />
+        </div>
+
+
         {/* 
-        <Grid item xs={12} md={4}>
           <Typography size='h4' weight='old'>
             Acessoria de imprensa
           </Typography>
@@ -110,9 +118,11 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           <FlexSpacer minHeight={1} />
 
         </Grid> */}
-      </Grid>
+      </div>
 
 
+
+      <FlexSpacer minHeight={5} />
 
 
       <FlexSpacer minHeight={5} />

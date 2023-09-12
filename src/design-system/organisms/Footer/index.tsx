@@ -5,6 +5,7 @@ import { FlexSpacer } from '../../atoms/FlexSpacer'
 import FooterLinks from '../../molecules/FooterLinks'
 import { HashLink } from 'react-router-hash-link';
 import { useNavigate } from "react-router-dom";
+import { Form } from "../../organisms/Form"
 import { theme } from '../../../styles/theme'
 import { FaFacebook, FaInstagram, FaTwitch, FaYoutube } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next';

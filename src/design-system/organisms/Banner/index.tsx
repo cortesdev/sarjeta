@@ -93,14 +93,22 @@ const Banner = () => {
                         viewport={{ once: false, amount: 0.7 }}
                         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
-                        <ButtonStyled
+                        {/* <ButtonStyled
                             target="_blank"
                             // to="mailto:sambadesarjeta@gmail.com?subject=Contratar Eventos"
                             to="https://instagram.com/coletivo.sarjeta"
                             className='btn btn-lg'
                         >
                             Contate-nos
-                        </ButtonStyled>
+                        </ButtonStyled> */}
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            className="block w-100 text-white hover:text-white bg-[#00000020] text-center p-3"
+                            href="https://instagram.com/coletivo.sarjeta"
+                        >
+                            {t('hero.cta')}
+                        </a>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.7)}
