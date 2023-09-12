@@ -8,6 +8,7 @@ export const Form = ({ title, content }) => {
     const [email, setEmail] = useState("");
     const [state, setState] = useState("idle");
     const [errorMsg, setErrorMsg] = useState(null);
+    const [messageSent, setMessageSent] = useState(false);
 
     const subscribe = async () => {
         try {
@@ -41,6 +42,7 @@ export const Form = ({ title, content }) => {
             )
             .then((result) => {
                 console.log(result.text);
+                setMessageSent(true); // Set messageSent to true on success
                 resetForm();
             })
             .catch((error) => {
@@ -114,7 +116,7 @@ export const Form = ({ title, content }) => {
                 />
 
                 {state === "Error" && <div className="error-state">{errorMsg}</div>}
-                {state === "Success" && (
+                {messageSent && (
                     <div className="text-center md:text-right py-3 opacity-[.50]">Awesome, thanks for subscribing!</div>
                 )}
             </form>
