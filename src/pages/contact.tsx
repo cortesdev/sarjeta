@@ -86,7 +86,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
           <FlexSpacer minHeight={1} />
 
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] mt-[-150px]">
           <Form title={``} content={` `} />
         </div>
 
@@ -121,11 +121,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
       </div>
 
 
-
-      <FlexSpacer minHeight={5} />
-
-
-      <FlexSpacer minHeight={5} />
+      <FlexSpacer minHeight={3} />
 
 
     </StyledContact>

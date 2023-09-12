@@ -47,8 +47,8 @@ export const Form = ({ title, content }) => {
 
         emailjs
             .sendForm(
-                'service_ey8th9k',
-                'template_b423s9h',
+                'service_fqo0c11',
+                'template_f7lgzoq',
                 form.current, '__ImQ6iEygEgdElci'
             )
             .then((result) => {
