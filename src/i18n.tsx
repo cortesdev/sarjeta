@@ -2,11 +2,9 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-http-backend';
-
-
+import ptTranslation from './locales/pt/translation.json';
 import enTranslation from './locales/en/translation.json';
 import deTranslation from './locales/de/translation.json';
-import ptTranslation from './locales/pt/translation.json';
 
 
 i18n
@@ -19,18 +17,18 @@ i18n
             caches: ['cookie'],
         },
         resources: {
+            pt: {
+                translation: ptTranslation,
+            },
             en: {
                 translation: enTranslation,
             },
             de: {
                 translation: deTranslation,
             },
-            pt: {
-                translation: ptTranslation,
-            },
         },
-        lng: 'en', // Set the default language
-        fallbackLng: 'en',
+        lng: 'pt', // Set the default language
+        fallbackLng: 'pt',
         interpolation: {
             escapeValue: false, // React already escapes by default
         },

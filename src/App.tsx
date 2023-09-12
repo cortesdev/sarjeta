@@ -2,11 +2,11 @@ import { FC, useEffect, useState } from 'react';
 import { Router } from './pages/Router';
 import { theme } from './styles/theme';
 import { ThemeProvider } from '@mui/material';
-import './styles/globals.css';
-import './styles/mui-overrides.css';
 import { Loader } from './design-system/_common/Loader';
 import { Suspense } from 'react';
 import { I18nextProvider, useTranslation } from 'react-i18next';
+import './styles/globals.css';
+import './styles/mui-overrides.css';
 
 interface AppProps {
   name?: any
