@@ -89,6 +89,7 @@ export const Form = ({ title, content }) => {
                     className='text-white text-lg p-2 w-full bg-[#ff5369] border border-[#ff5379]'
                     name="from_name"
                     type="text"
+                    required 
                 />
 
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
@@ -99,6 +100,7 @@ export const Form = ({ title, content }) => {
                     name="reply_to"
                     type="email"
                     value={email}
+                    required 
                     onChange={(e) => setEmail(e.target.value)}
                 />
 
