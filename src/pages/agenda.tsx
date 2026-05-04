@@ -44,7 +44,7 @@ const Agenda: FC<AgendaProps> = ({ pageWidth }) => {
 
         <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="space-between" >
           {!isMobile &&
-            <img src="/images/sarjetiros.jpeg" alt="logo" style={{
+            <img src="/images/sarjeteiros.jpg" alt="logo" style={{
               width: '53%',
               height: 310,
               objectFit: 'cover',

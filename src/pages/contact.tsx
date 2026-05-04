@@ -19,7 +19,7 @@ const Contact: FC<ContactProps> = ({ pageWidth }) => {
   const StyledContact = styled.section`
       width: ${pageWidth};
       padding: 0 3rem;
-      background: #e9004c;
+      background: #ffd000;
       margin-bottom: 2rem;
       
       @media (max-width: 600px) {

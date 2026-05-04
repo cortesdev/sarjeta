@@ -87,7 +87,7 @@ const MobileNav: FC<MobileNavProps> = () => {
             style={{ margin: 'auto 0' }}
             src="/images/SVG/logo-horiz.svg"
             alt="sarjeta logo"
-            width={100}
+            width={45}
           />
         </div>
 

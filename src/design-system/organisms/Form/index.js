@@ -86,21 +86,21 @@ export const Form = ({ title, content }) => {
                     {t('form.name')}
                 </label>
                 <input
-                    className='text-white text-lg p-2 w-full bg-[#ff5369] border border-[#ff5379]'
+                    className='text-white text-lg p-2 w-full bg-[#ff9900] border border-[#ff5379]'
                     name="from_name"
                     type="text"
-                    required 
+                    required
                 />
 
                 <label className="block text-white my-6 text-lg font-bold mb-5 komica">
                     {t('form.mail')}
                 </label>
                 <input
-                    className='text-white p-2 w-full text-lg bg-[#ff5369] border border-[#ff5379]'
+                    className='text-white p-2 w-full text-lg bg-[#ff9900] border border-[#ff5379]'
                     name="reply_to"
                     type="email"
                     value={email}
-                    required 
+                    required
                     onChange={(e) => setEmail(e.target.value)}
                 />
 
@@ -109,7 +109,7 @@ export const Form = ({ title, content }) => {
                 </label>
                 <textarea
                     name="message"
-                    className='p-2 w-full text-lg text-white bg-[#ff5369] border border-[#ff5379]'
+                    className='p-2 w-full text-lg text-white bg-[#ff9900] border border-[#ff5379]'
                 />
 
                 <input

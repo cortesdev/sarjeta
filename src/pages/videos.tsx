@@ -34,9 +34,9 @@ const Videos: FC<VideosProps> = ({ pageWidth }) => {
                 <FlexSpacer minHeight={3} />
 
                 <Grid container spacing={4} margin="0 auto">
-                    <Grid item xs={12} md={4}>
+                    {/* <Grid item xs={12} md={4}>
                         <iframe className="boxShadow borderRadius" width="95%" height="548" src="https://www.youtube.com/embed/9cOeEj7iQpI" title="Nada mal sarjeteiro" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                    </Grid>
+                    </Grid> */}
                     <Grid item xs={12} md={4}>
                         <iframe className="boxShadow borderRadius" width="95%" height="548" src="https://www.youtube.com/embed/0rMs0zKD2Uw" title="6. May 2023" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </Grid>

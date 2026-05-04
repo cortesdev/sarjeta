@@ -8,7 +8,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
-  background-color: #F8407C;
+  background-color: #FFD700;
   color: white;
 }
 
@@ -178,7 +178,7 @@ a,
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 128, 0.75);
+  background: rgba(255, 119, 0, 0.75);
   border-radius: 15px;
 }
 
@@ -195,7 +195,7 @@ a,
 }
 
 .bg-light {
-  background-color: rgba(255, 0, 83, 0.75);
+  background-color: rgba(255, 191, 0, 0.75);
 }
 
 .bg-dark {
@@ -210,7 +210,7 @@ hr {
 }
 
 .container {
-  background-color: #F8407C;
+  background-color: #FFD700;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
@@ -220,7 +220,7 @@ hr {
 
 
 .green {
-  background-image: linear-gradient(to right, rgba(0, 255, 128, 0.75), #0ebbff);
+  background-image: linear-gradient(to right, rgba(255, 123, 0, 0.75), #ff260e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

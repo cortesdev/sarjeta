@@ -38,7 +38,7 @@ const Home: FC<HomeProps> = ({ pageWidth }) => {
         <Release />
         <FlexSpacer minHeight={5} />
 
-        <Formation />
+        {/* <Formation /> */}
         <FlexSpacer minHeight={5} />
 
 

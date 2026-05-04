@@ -14,7 +14,7 @@ const DivLoading = styled(Stack)`
     top: 0;
     bottom: 0;
 
-    background: #FE6798;
+    background: #fff200;
     height: 100%;
     align-items: center;
     padding: 2rem 10rem;
@@ -41,7 +41,7 @@ export const Loader: FC = ({ ...props }) => {
     return (
         <DivLoading direction="column" className='loader'>
             <CenterVertical>
-                <img src="/images/SVG/logo-vert.svg" alt="sarjeta brand home" width={400} height={450} />
+                <img src="/images/SVG/logo-horiz.svg" alt="sarjeta brand home" width={400} height={450} />
 
                 <CenterTitle>
                     <OneLine>

@@ -34,7 +34,7 @@ const Header: FC<HeaderProps> = ({ pageWidth }) => {
 
     return (
         <StyledHeader className={scroll ? "bg-light" : "bg-dark"}        >
-            <StyledContainer direction="row" justifyContent="space-between" sx={{ maxHeight: 100 }}>
+            <StyledContainer direction="row" justifyContent="space-between" sx={{ maxHeight: 70 }}>
                 <Link href='/'>
                     <img src="/images/SVG/logo-horiz.svg"
                         style={{ maxHeight: !scroll ? 100 : 50 }} alt="logo" />

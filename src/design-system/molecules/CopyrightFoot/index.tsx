@@ -15,8 +15,8 @@ const CopyrightFoot: FC<CopyrightFootProps> = ({ pageWidth }) => {
 
     return (
         <div style={{
-            background: 'rgb(0 229 132)',
-            color: '#fd105d',
+            background: 'rgb(229, 137, 0)',
+            color: '#f9fd10',
             fontWeight: 'bolder'
         }}>
 

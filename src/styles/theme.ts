@@ -65,7 +65,7 @@ declare module "@mui/material/styles" {
   }
   // allow configuration using `createTheme`
   interface ThemeOptions {
-    overrides: {}
+    overrides: {};
     background: {
       color?: string;
     };
@@ -130,29 +130,29 @@ declare module "@mui/material/styles" {
 export const theme = createTheme({
   overrides: {
     MuiButton: {
-      root: {                
+      root: {
         "&:not($sizeLarge):not($sizeSmall) $label": {
-          height: '38px',
+          height: "38px",
           // font: "normal normal 500 0.875rem/1.6875rem ",
-        }
+        },
       },
       sizeLarge: {
         "& $label": {
           // font: "normal normal 500 0.9375rem/1.6875rem",
-        }
+        },
       },
       sizeSmall: {
         "& $label": {
           // font: "normal normal 500 0.8125rem/1.6875rem Open Sans"
-        }
-      }
-    }
+        },
+      },
+    },
   },
   palette: {
     primary: {
-      main: "#FF005380",
-      dark: "#F8407C",
-      light: "#F8407C",
+      main: "#FFD70080",
+      dark: "#FFD700",
+      light: "#FFD700",
     },
     neutral: {
       main: "#64748B",
@@ -167,13 +167,13 @@ export const theme = createTheme({
     secondary: "#fff",
     tertiary: "#1AD24E",
     text: "#fff",
-    background: "#FF0053",
-    primary: "#FF0053",
+    background: "#FFD700",
+    primary: "#FFD700",
     light: "#edeff1",
     lighter: "#F2F4FF",
     // Neutral
     white: "#FCFCFD",
-    error: "#D21A1A",
+    error: "#FFD700",
     success: "#1AD24E",
     warning: "#FFA800",
     // Accent Base
@@ -204,7 +204,7 @@ export const theme = createTheme({
   typography: {
     allVariants: {
       textTransform: "inherit",
-    },  
+    },
     h1: {
       fontFamily: "sarjeta old",
       fontSize: "8rem",
